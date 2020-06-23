@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	      -DCMAKE_LIBRARY_ARCHITECTURE="$(DEB_TARGET_MULTIARCH)" \
+				-DPROTOBUF_HOME="/usr" \
+				-DSNAPPY_HOME="/usr" \
+				-DZSTD_STATIC_LIB_NAME="zstd" \
+				-DZSTD_HOME="/usr" \
+				-DLZ4_HOME="/usr" \
+				-DZLIB_HOME="/usr" \
+				-DBUILD_JAVA=OFF \
+				-DBUILD_LIBHDFSPP=OFF \
+				-DBUILD_CPP_TESTS=OFF \
+				-DBUILD_TOOLS=OFF \

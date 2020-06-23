@@ -1,0 +1,22 @@
+Source: orc
+Section: libdevel
+Priority: optional
+Maintainer: Damien Bihel <biheldamien@gmail.com>
+Build-Depends: cmake, debhelper (>=11~), libsnappy-dev, libzstd-dev, liblz4-dev, libprotobuf-dev, protobuf-compiler, zlib1g-dev, libprotoc-dev
+Standards-Version: 4.1.4
+Homepage: https://orc.apache.org/
+
+Package: orc
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: The smallest, fastest columnar storage for Hadoop workloads.
+ ORC is a self-describing type-aware columnar file format
+ designed for Hadoop workloads.
+ It is optimized for large streaming reads, but with integrated
+ support for finding required rows quickly.
+ Storing data in a columnar format lets the reader read, decompress,
+ and process only the values that are required for the current query.
+ Because ORC files are type-aware, the writer chooses the most
+ appropriate encoding for the type and builds an internal index
+ as the file is written.

@@ -1,0 +1,2672 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: orc
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     appveyor.yml
+           c++/include/orc/BloomFilter.hh
+           c++/include/orc/ColumnPrinter.hh
+           c++/include/orc/Common.hh
+           c++/include/orc/Exceptions.hh
+           c++/include/orc/Int128.hh
+           c++/include/orc/MemoryPool.hh
+           c++/include/orc/OrcFile.hh
+           c++/include/orc/Reader.hh
+           c++/include/orc/Statistics.hh
+           c++/include/orc/Type.hh
+           c++/include/orc/Vector.hh
+           c++/include/orc/Writer.hh
+           c++/src/Adaptor.cc
+           c++/src/Adaptor.hh.in
+           c++/src/BloomFilter.cc
+           c++/src/BloomFilter.hh
+           c++/src/ByteRLE.cc
+           c++/src/ByteRLE.hh
+           c++/src/ColumnPrinter.cc
+           c++/src/ColumnReader.cc
+           c++/src/ColumnReader.hh
+           c++/src/ColumnWriter.cc
+           c++/src/ColumnWriter.hh
+           c++/src/Common.cc
+           c++/src/Compression.cc
+           c++/src/Compression.hh
+           c++/src/Exceptions.cc
+           c++/src/Int128.cc
+           c++/src/LzoDecompressor.hh
+           c++/src/MemoryPool.cc
+           c++/src/Murmur3.cc
+           c++/src/Murmur3.hh
+           c++/src/Options.hh
+           c++/src/OrcFile.cc
+           c++/src/OrcHdfsFile.cc
+           c++/src/RLE.cc
+           c++/src/RLE.hh
+           c++/src/RLEV2Util.hh
+           c++/src/RLEv1.cc
+           c++/src/RLEv1.hh
+           c++/src/RLEv2.hh
+           c++/src/Reader.cc
+           c++/src/Reader.hh
+           c++/src/RleDecoderV2.cc
+           c++/src/Statistics.cc
+           c++/src/Statistics.hh
+           c++/src/StripeStream.cc
+           c++/src/StripeStream.hh
+           c++/src/Timezone.cc
+           c++/src/Timezone.hh
+           c++/src/TypeImpl.cc
+           c++/src/TypeImpl.hh
+           c++/src/Vector.cc
+           c++/src/Writer.cc
+           c++/src/io/InputStream.cc
+           c++/src/io/InputStream.hh
+           c++/src/io/OutputStream.cc
+           c++/src/io/OutputStream.hh
+           c++/test/CreateTestFiles.cc
+           c++/test/MemoryInputStream.cc
+           c++/test/MemoryInputStream.hh
+           c++/test/MemoryOutputStream.cc
+           c++/test/MemoryOutputStream.hh
+           c++/test/OrcTest.hh
+           c++/test/TestBloomFilter.cc
+           c++/test/TestBufferedOutputStream.cc
+           c++/test/TestByteRLEEncoder.cc
+           c++/test/TestByteRle.cc
+           c++/test/TestColumnPrinter.cc
+           c++/test/TestColumnReader.cc
+           c++/test/TestColumnStatistics.cc
+           c++/test/TestCompression.cc
+           c++/test/TestDecimal.cc
+           c++/test/TestDecompression.cc
+           c++/test/TestDictionaryEncoding.cc
+           c++/test/TestDriver.cc
+           c++/test/TestInt128.cc
+           c++/test/TestRLEV2Util.cc
+           c++/test/TestReader.cc
+           c++/test/TestRleDecoder.cc
+           c++/test/TestRleEncoder.cc
+           c++/test/TestStripeIndexStatistics.cc
+           c++/test/TestTimestampStatistics.cc
+           c++/test/TestTimezone.cc
+           c++/test/TestType.cc
+           c++/test/TestWriter.cc
+           docker/reinit.sh
+           docker/run-all.sh
+           java/bench/core/src/java/org/apache/hadoop/fs/TrackingLocalFileSystem.java
+           java/bench/core/src/java/org/apache/orc/bench/core/BenchmarkOptions.java
+           java/bench/core/src/java/org/apache/orc/bench/core/CompressionKind.java
+           java/bench/core/src/java/org/apache/orc/bench/core/NullFileSystem.java
+           java/bench/core/src/java/org/apache/orc/bench/core/OrcBenchmark.java
+           java/bench/core/src/java/org/apache/orc/bench/core/RandomGenerator.java
+           java/bench/core/src/java/org/apache/orc/bench/core/SalesGenerator.java
+           java/bench/core/src/java/org/apache/orc/bench/core/Utilities.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/avro/AvroReader.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/avro/AvroSchemaUtils.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/avro/AvroWriter.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/csv/CsvReader.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/json/JsonReader.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/json/JsonWriter.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/orc/OrcReader.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/orc/OrcWriter.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/parquet/ParquetReader.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/parquet/ParquetWriter.java
+           java/bench/fetch-data.sh
+           java/bench/hive/src/java/org/apache/hadoop/hive/ql/io/orc/OrcBenchmarkUtilities.java
+           java/bench/hive/src/java/org/apache/orc/bench/hive/ColumnProjectionBenchmark.java
+           java/bench/hive/src/java/org/apache/orc/bench/hive/DecimalBench.java
+           java/bench/hive/src/java/org/apache/orc/bench/hive/FullReadBenchmark.java
+           java/bench/spark/src/java/org/apache/orc/bench/spark/SparkBenchmark.java
+           java/bench/spark/src/java/org/apache/orc/bench/spark/SparkSchema.java
+           java/core/src/java/org/apache/orc/BinaryColumnStatistics.java
+           java/core/src/java/org/apache/orc/BooleanColumnStatistics.java
+           java/core/src/java/org/apache/orc/CollectionColumnStatistics.java
+           java/core/src/java/org/apache/orc/ColumnStatistics.java
+           java/core/src/java/org/apache/orc/CompressionCodec.java
+           java/core/src/java/org/apache/orc/CompressionKind.java
+           java/core/src/java/org/apache/orc/DataMask.java
+           java/core/src/java/org/apache/orc/DataMaskDescription.java
+           java/core/src/java/org/apache/orc/DataReader.java
+           java/core/src/java/org/apache/orc/DateColumnStatistics.java
+           java/core/src/java/org/apache/orc/DecimalColumnStatistics.java
+           java/core/src/java/org/apache/orc/DoubleColumnStatistics.java
+           java/core/src/java/org/apache/orc/EncryptionKey.java
+           java/core/src/java/org/apache/orc/EncryptionVariant.java
+           java/core/src/java/org/apache/orc/FileMetadata.java
+           java/core/src/java/org/apache/orc/IntegerColumnStatistics.java
+           java/core/src/java/org/apache/orc/MemoryManager.java
+           java/core/src/java/org/apache/orc/OrcConf.java
+           java/core/src/java/org/apache/orc/OrcFile.java
+           java/core/src/java/org/apache/orc/OrcUtils.java
+           java/core/src/java/org/apache/orc/PhysicalWriter.java
+           java/core/src/java/org/apache/orc/Reader.java
+           java/core/src/java/org/apache/orc/RecordReader.java
+           java/core/src/java/org/apache/orc/StringColumnStatistics.java
+           java/core/src/java/org/apache/orc/StripeInformation.java
+           java/core/src/java/org/apache/orc/StripeStatistics.java
+           java/core/src/java/org/apache/orc/TimestampColumnStatistics.java
+           java/core/src/java/org/apache/orc/TypeDescription.java
+           java/core/src/java/org/apache/orc/TypeDescriptionPrettyPrint.java
+           java/core/src/java/org/apache/orc/UnknownFormatException.java
+           java/core/src/java/org/apache/orc/Writer.java
+           java/core/src/java/org/apache/orc/impl/AircompressorCodec.java
+           java/core/src/java/org/apache/orc/impl/BitFieldReader.java
+           java/core/src/java/org/apache/orc/impl/BitFieldWriter.java
+           java/core/src/java/org/apache/orc/impl/BufferChunk.java
+           java/core/src/java/org/apache/orc/impl/ColumnStatisticsImpl.java
+           java/core/src/java/org/apache/orc/impl/ConvertTreeReaderFactory.java
+           java/core/src/java/org/apache/orc/impl/DataReaderProperties.java
+           java/core/src/java/org/apache/orc/impl/DirectDecompressionCodec.java
+           java/core/src/java/org/apache/orc/impl/DynamicByteArray.java
+           java/core/src/java/org/apache/orc/impl/DynamicIntArray.java
+           java/core/src/java/org/apache/orc/impl/HadoopShimsFactory.java
+           java/core/src/java/org/apache/orc/impl/InStream.java
+           java/core/src/java/org/apache/orc/impl/IntegerReader.java
+           java/core/src/java/org/apache/orc/impl/IntegerWriter.java
+           java/core/src/java/org/apache/orc/impl/MaskDescriptionImpl.java
+           java/core/src/java/org/apache/orc/impl/MemoryManager.java
+           java/core/src/java/org/apache/orc/impl/MemoryManagerImpl.java
+           java/core/src/java/org/apache/orc/impl/OrcCodecPool.java
+           java/core/src/java/org/apache/orc/impl/OrcIndex.java
+           java/core/src/java/org/apache/orc/impl/OrcTail.java
+           java/core/src/java/org/apache/orc/impl/OutStream.java
+           java/core/src/java/org/apache/orc/impl/PhysicalFsWriter.java
+           java/core/src/java/org/apache/orc/impl/PositionProvider.java
+           java/core/src/java/org/apache/orc/impl/PositionRecorder.java
+           java/core/src/java/org/apache/orc/impl/PositionedOutputStream.java
+           java/core/src/java/org/apache/orc/impl/ReaderImpl.java
+           java/core/src/java/org/apache/orc/impl/RecordReaderImpl.java
+           java/core/src/java/org/apache/orc/impl/RecordReaderUtils.java
+           java/core/src/java/org/apache/orc/impl/RedBlackTree.java
+           java/core/src/java/org/apache/orc/impl/RunLengthByteReader.java
+           java/core/src/java/org/apache/orc/impl/RunLengthByteWriter.java
+           java/core/src/java/org/apache/orc/impl/RunLengthIntegerReader.java
+           java/core/src/java/org/apache/orc/impl/RunLengthIntegerReaderV2.java
+           java/core/src/java/org/apache/orc/impl/RunLengthIntegerWriter.java
+           java/core/src/java/org/apache/orc/impl/RunLengthIntegerWriterV2.java
+           java/core/src/java/org/apache/orc/impl/SchemaEvolution.java
+           java/core/src/java/org/apache/orc/impl/SerializationUtils.java
+           java/core/src/java/org/apache/orc/impl/SnappyCodec.java
+           java/core/src/java/org/apache/orc/impl/StreamName.java
+           java/core/src/java/org/apache/orc/impl/StringRedBlackTree.java
+           java/core/src/java/org/apache/orc/impl/TreeReaderFactory.java
+           java/core/src/java/org/apache/orc/impl/Utf8Utils.java
+           java/core/src/java/org/apache/orc/impl/WriterImpl.java
+           java/core/src/java/org/apache/orc/impl/WriterInternal.java
+           java/core/src/java/org/apache/orc/impl/ZlibCodec.java
+           java/core/src/java/org/apache/orc/impl/mask/DecimalIdentity.java
+           java/core/src/java/org/apache/orc/impl/mask/DoubleIdentity.java
+           java/core/src/java/org/apache/orc/impl/mask/ListIdentity.java
+           java/core/src/java/org/apache/orc/impl/mask/LongIdentity.java
+           java/core/src/java/org/apache/orc/impl/mask/MapIdentity.java
+           java/core/src/java/org/apache/orc/impl/mask/MaskFactory.java
+           java/core/src/java/org/apache/orc/impl/mask/MaskProvider.java
+           java/core/src/java/org/apache/orc/impl/mask/NullifyMask.java
+           java/core/src/java/org/apache/orc/impl/mask/RedactMaskFactory.java
+           java/core/src/java/org/apache/orc/impl/mask/SHA256MaskFactory.java
+           java/core/src/java/org/apache/orc/impl/mask/StructIdentity.java
+           java/core/src/java/org/apache/orc/impl/mask/TimestampIdentity.java
+           java/core/src/java/org/apache/orc/impl/mask/UnionIdentity.java
+           java/core/src/java/org/apache/orc/impl/writer/BinaryTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/BooleanTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/ByteTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/CharTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/DateTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/Decimal64TreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/DecimalTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/DoubleTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/EncryptionTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/FloatTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/IntegerTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/ListTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/MapTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/StreamOptions.java
+           java/core/src/java/org/apache/orc/impl/writer/StringBaseTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/StringTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/StructTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/TimestampTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/TreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/TreeWriterBase.java
+           java/core/src/java/org/apache/orc/impl/writer/UnionTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/VarcharTreeWriter.java
+           java/core/src/java/org/apache/orc/impl/writer/WriterContext.java
+           java/core/src/java/org/apache/orc/impl/writer/WriterEncryptionKey.java
+           java/core/src/java/org/apache/orc/impl/writer/WriterEncryptionVariant.java
+           java/core/src/java/org/apache/orc/impl/writer/WriterImplV2.java
+           java/core/src/java/org/apache/orc/util/BloomFilter.java
+           java/core/src/java/org/apache/orc/util/BloomFilterIO.java
+           java/core/src/java/org/apache/orc/util/BloomFilterUtf8.java
+           java/core/src/java/org/apache/orc/util/Murmur3.java
+           java/core/src/test/org/apache/orc/TestColumnStatistics.java
+           java/core/src/test/org/apache/orc/TestCorruptTypes.java
+           java/core/src/test/org/apache/orc/TestNewIntegerEncoding.java
+           java/core/src/test/org/apache/orc/TestOrcNullOptimization.java
+           java/core/src/test/org/apache/orc/TestOrcTimezone1.java
+           java/core/src/test/org/apache/orc/TestOrcTimezone2.java
+           java/core/src/test/org/apache/orc/TestOrcTimezone3.java
+           java/core/src/test/org/apache/orc/TestOrcTimezone4.java
+           java/core/src/test/org/apache/orc/TestOrcTimezonePPD.java
+           java/core/src/test/org/apache/orc/TestReader.java
+           java/core/src/test/org/apache/orc/TestStringDictionary.java
+           java/core/src/test/org/apache/orc/TestTypeDescription.java
+           java/core/src/test/org/apache/orc/TestUnicode.java
+           java/core/src/test/org/apache/orc/TestUnrolledBitPack.java
+           java/core/src/test/org/apache/orc/TestVectorOrcFile.java
+           java/core/src/test/org/apache/orc/impl/MockDataReader.java
+           java/core/src/test/org/apache/orc/impl/MockStream.java
+           java/core/src/test/org/apache/orc/impl/MockStripe.java
+           java/core/src/test/org/apache/orc/impl/TestBitFieldReader.java
+           java/core/src/test/org/apache/orc/impl/TestBitPack.java
+           java/core/src/test/org/apache/orc/impl/TestColumnStatisticsImpl.java
+           java/core/src/test/org/apache/orc/impl/TestCryptoUtils.java
+           java/core/src/test/org/apache/orc/impl/TestDataReaderProperties.java
+           java/core/src/test/org/apache/orc/impl/TestDynamicArray.java
+           java/core/src/test/org/apache/orc/impl/TestInStream.java
+           java/core/src/test/org/apache/orc/impl/TestIntegerCompressionReader.java
+           java/core/src/test/org/apache/orc/impl/TestMemoryManager.java
+           java/core/src/test/org/apache/orc/impl/TestOrcWideTable.java
+           java/core/src/test/org/apache/orc/impl/TestOutStream.java
+           java/core/src/test/org/apache/orc/impl/TestPhysicalFsWriter.java
+           java/core/src/test/org/apache/orc/impl/TestPredicatePushDownBounds.java
+           java/core/src/test/org/apache/orc/impl/TestRecordReaderImpl.java
+           java/core/src/test/org/apache/orc/impl/TestRunLengthByteReader.java
+           java/core/src/test/org/apache/orc/impl/TestRunLengthIntegerReader.java
+           java/core/src/test/org/apache/orc/impl/TestSchemaEvolution.java
+           java/core/src/test/org/apache/orc/impl/TestSerializationUtils.java
+           java/core/src/test/org/apache/orc/impl/TestStreamName.java
+           java/core/src/test/org/apache/orc/impl/TestStringRedBlackTree.java
+           java/core/src/test/org/apache/orc/impl/TestWriterImpl.java
+           java/core/src/test/org/apache/orc/impl/TestZlib.java
+           java/core/src/test/org/apache/orc/impl/mask/TestDataMask.java
+           java/core/src/test/org/apache/orc/impl/mask/TestRedactMask.java
+           java/core/src/test/org/apache/orc/util/TestBloomFilter.java
+           java/core/src/test/org/apache/orc/util/TestMurmur3.java
+           java/core/src/test/org/apache/orc/util/TestOrcUtils.java
+           java/examples/src/java/org/apache/orc/examples/AdvancedWriter.java
+           java/examples/src/java/org/apache/orc/examples/CoreReader.java
+           java/examples/src/java/org/apache/orc/examples/CoreWriter.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcInputFormat.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcKey.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcList.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcMap.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcMapredRecordReader.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcMapredRecordWriter.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcOutputFormat.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcStruct.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcTimestamp.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcUnion.java
+           java/mapreduce/src/java/org/apache/orc/mapred/OrcValue.java
+           java/mapreduce/src/java/org/apache/orc/mapreduce/OrcInputFormat.java
+           java/mapreduce/src/java/org/apache/orc/mapreduce/OrcMapreduceRecordReader.java
+           java/mapreduce/src/java/org/apache/orc/mapreduce/OrcMapreduceRecordWriter.java
+           java/mapreduce/src/java/org/apache/orc/mapreduce/OrcOutputFormat.java
+           java/mapreduce/src/test/org/apache/orc/mapred/TestMrUnit.java
+           java/mapreduce/src/test/org/apache/orc/mapred/TestOrcList.java
+           java/mapreduce/src/test/org/apache/orc/mapred/TestOrcMap.java
+           java/mapreduce/src/test/org/apache/orc/mapred/TestOrcOutputFormat.java
+           java/mapreduce/src/test/org/apache/orc/mapred/TestOrcStruct.java
+           java/mapreduce/src/test/org/apache/orc/mapred/TestOrcTimestamp.java
+           java/mapreduce/src/test/org/apache/orc/mapred/TestOrcUnion.java
+           java/mapreduce/src/test/org/apache/orc/mapreduce/TestMapreduceOrcOutputFormat.java
+           java/mapreduce/src/test/org/apache/orc/mapreduce/TestMrUnit.java
+           java/shims/src/java/org/apache/orc/EncryptionAlgorithm.java
+           java/shims/src/java/org/apache/orc/impl/HadoopShims.java
+           java/shims/src/java/org/apache/orc/impl/HadoopShimsCurrent.java
+           java/shims/src/java/org/apache/orc/impl/HadoopShimsPre2_3.java
+           java/shims/src/java/org/apache/orc/impl/HadoopShimsPre2_6.java
+           java/shims/src/java/org/apache/orc/impl/HadoopShimsPre2_7.java
+           java/shims/src/java/org/apache/orc/impl/LocalKey.java
+           java/shims/src/java/org/apache/orc/impl/ZeroCopyShims.java
+           java/shims/src/test/org/apache/orc/impl/TestHadoopShimsPre2_7.java
+           java/tools/src/java/org/apache/orc/tools/convert/ConvertTool.java
+           java/tools/src/java/org/apache/orc/tools/convert/CsvReader.java
+           java/tools/src/java/org/apache/orc/tools/convert/JsonReader.java
+           java/tools/src/java/org/apache/orc/tools/json/BooleanType.java
+           java/tools/src/java/org/apache/orc/tools/json/HiveType.java
+           java/tools/src/java/org/apache/orc/tools/json/JsonSchemaFinder.java
+           java/tools/src/java/org/apache/orc/tools/json/JsonShredder.java
+           java/tools/src/java/org/apache/orc/tools/json/ListType.java
+           java/tools/src/java/org/apache/orc/tools/json/NullType.java
+           java/tools/src/java/org/apache/orc/tools/json/NumericType.java
+           java/tools/src/java/org/apache/orc/tools/json/StringType.java
+           java/tools/src/java/org/apache/orc/tools/json/StructType.java
+           java/tools/src/java/org/apache/orc/tools/json/UnionType.java
+           java/tools/src/test/org/apache/orc/impl/TestRLEv2.java
+           java/tools/src/test/org/apache/orc/tools/TestFileDump.java
+           java/tools/src/test/org/apache/orc/tools/TestJsonFileDump.java
+           java/tools/src/test/org/apache/orc/tools/convert/TestCsvReader.java
+           java/tools/src/test/org/apache/orc/tools/json/TestJsonSchemaFinder.java
+           proto/orc_proto.proto
+           tools/src/CSVFileImport.cc
+           tools/src/FileContents.cc
+           tools/src/FileMemory.cc
+           tools/src/FileMetadata.cc
+           tools/src/FileScan.cc
+           tools/src/FileStatistics.cc
+           tools/src/TimezoneDump.cc
+           tools/test/TestCSVFileImport.cc
+           tools/test/TestFileContents.cc
+           tools/test/TestFileMetadata.cc
+           tools/test/TestFileScan.cc
+           tools/test/TestFileStatistics.cc
+           tools/test/TestMatch.cc
+           tools/test/ToolTest.cc
+           tools/test/ToolTest.hh
+           tools/test/gzip.cc
+           tools/test/gzip.hh
+Copyright: __NO_COPYRIGHT__ in: appveyor.yml
+           __NO_COPYRIGHT__ in: c++/include/orc/BloomFilter.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/ColumnPrinter.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/Common.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/Exceptions.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/Int128.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/MemoryPool.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/OrcFile.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/Reader.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/Statistics.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/Type.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/Vector.hh
+           __NO_COPYRIGHT__ in: c++/include/orc/Writer.hh
+           __NO_COPYRIGHT__ in: c++/src/Adaptor.cc
+           __NO_COPYRIGHT__ in: c++/src/Adaptor.hh.in
+           __NO_COPYRIGHT__ in: c++/src/BloomFilter.cc
+           __NO_COPYRIGHT__ in: c++/src/BloomFilter.hh
+           __NO_COPYRIGHT__ in: c++/src/ByteRLE.cc
+           __NO_COPYRIGHT__ in: c++/src/ByteRLE.hh
+           __NO_COPYRIGHT__ in: c++/src/ColumnPrinter.cc
+           __NO_COPYRIGHT__ in: c++/src/ColumnReader.cc
+           __NO_COPYRIGHT__ in: c++/src/ColumnReader.hh
+           __NO_COPYRIGHT__ in: c++/src/ColumnWriter.cc
+           __NO_COPYRIGHT__ in: c++/src/ColumnWriter.hh
+           __NO_COPYRIGHT__ in: c++/src/Common.cc
+           __NO_COPYRIGHT__ in: c++/src/Compression.cc
+           __NO_COPYRIGHT__ in: c++/src/Compression.hh
+           __NO_COPYRIGHT__ in: c++/src/Exceptions.cc
+           __NO_COPYRIGHT__ in: c++/src/Int128.cc
+           __NO_COPYRIGHT__ in: c++/src/LzoDecompressor.hh
+           __NO_COPYRIGHT__ in: c++/src/MemoryPool.cc
+           __NO_COPYRIGHT__ in: c++/src/Murmur3.cc
+           __NO_COPYRIGHT__ in: c++/src/Murmur3.hh
+           __NO_COPYRIGHT__ in: c++/src/Options.hh
+           __NO_COPYRIGHT__ in: c++/src/OrcFile.cc
+           __NO_COPYRIGHT__ in: c++/src/OrcHdfsFile.cc
+           __NO_COPYRIGHT__ in: c++/src/RLE.cc
+           __NO_COPYRIGHT__ in: c++/src/RLE.hh
+           __NO_COPYRIGHT__ in: c++/src/RLEV2Util.hh
+           __NO_COPYRIGHT__ in: c++/src/RLEv1.cc
+           __NO_COPYRIGHT__ in: c++/src/RLEv1.hh
+           __NO_COPYRIGHT__ in: c++/src/RLEv2.hh
+           __NO_COPYRIGHT__ in: c++/src/Reader.cc
+           __NO_COPYRIGHT__ in: c++/src/Reader.hh
+           __NO_COPYRIGHT__ in: c++/src/RleDecoderV2.cc
+           __NO_COPYRIGHT__ in: c++/src/Statistics.cc
+           __NO_COPYRIGHT__ in: c++/src/Statistics.hh
+           __NO_COPYRIGHT__ in: c++/src/StripeStream.cc
+           __NO_COPYRIGHT__ in: c++/src/StripeStream.hh
+           __NO_COPYRIGHT__ in: c++/src/Timezone.cc
+           __NO_COPYRIGHT__ in: c++/src/Timezone.hh
+           __NO_COPYRIGHT__ in: c++/src/TypeImpl.cc
+           __NO_COPYRIGHT__ in: c++/src/TypeImpl.hh
+           __NO_COPYRIGHT__ in: c++/src/Vector.cc
+           __NO_COPYRIGHT__ in: c++/src/Writer.cc
+           __NO_COPYRIGHT__ in: c++/src/io/InputStream.cc
+           __NO_COPYRIGHT__ in: c++/src/io/InputStream.hh
+           __NO_COPYRIGHT__ in: c++/src/io/OutputStream.cc
+           __NO_COPYRIGHT__ in: c++/src/io/OutputStream.hh
+           __NO_COPYRIGHT__ in: c++/test/CreateTestFiles.cc
+           __NO_COPYRIGHT__ in: c++/test/MemoryInputStream.cc
+           __NO_COPYRIGHT__ in: c++/test/MemoryInputStream.hh
+           __NO_COPYRIGHT__ in: c++/test/MemoryOutputStream.cc
+           __NO_COPYRIGHT__ in: c++/test/MemoryOutputStream.hh
+           __NO_COPYRIGHT__ in: c++/test/OrcTest.hh
+           __NO_COPYRIGHT__ in: c++/test/TestBloomFilter.cc
+           __NO_COPYRIGHT__ in: c++/test/TestBufferedOutputStream.cc
+           __NO_COPYRIGHT__ in: c++/test/TestByteRLEEncoder.cc
+           __NO_COPYRIGHT__ in: c++/test/TestByteRle.cc
+           __NO_COPYRIGHT__ in: c++/test/TestColumnPrinter.cc
+           __NO_COPYRIGHT__ in: c++/test/TestColumnReader.cc
+           __NO_COPYRIGHT__ in: c++/test/TestColumnStatistics.cc
+           __NO_COPYRIGHT__ in: c++/test/TestCompression.cc
+           __NO_COPYRIGHT__ in: c++/test/TestDecimal.cc
+           __NO_COPYRIGHT__ in: c++/test/TestDecompression.cc
+           __NO_COPYRIGHT__ in: c++/test/TestDictionaryEncoding.cc
+           __NO_COPYRIGHT__ in: c++/test/TestDriver.cc
+           __NO_COPYRIGHT__ in: c++/test/TestInt128.cc
+           __NO_COPYRIGHT__ in: c++/test/TestRLEV2Util.cc
+           __NO_COPYRIGHT__ in: c++/test/TestReader.cc
+           __NO_COPYRIGHT__ in: c++/test/TestRleDecoder.cc
+           __NO_COPYRIGHT__ in: c++/test/TestRleEncoder.cc
+           __NO_COPYRIGHT__ in: c++/test/TestStripeIndexStatistics.cc
+           __NO_COPYRIGHT__ in: c++/test/TestTimestampStatistics.cc
+           __NO_COPYRIGHT__ in: c++/test/TestTimezone.cc
+           __NO_COPYRIGHT__ in: c++/test/TestType.cc
+           __NO_COPYRIGHT__ in: c++/test/TestWriter.cc
+           __NO_COPYRIGHT__ in: docker/reinit.sh
+           __NO_COPYRIGHT__ in: docker/run-all.sh
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/hadoop/fs/TrackingLocalFileSystem.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/BenchmarkOptions.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/CompressionKind.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/NullFileSystem.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/OrcBenchmark.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/RandomGenerator.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/SalesGenerator.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/Utilities.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/avro/AvroReader.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/avro/AvroSchemaUtils.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/avro/AvroWriter.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/csv/CsvReader.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/json/JsonReader.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/json/JsonWriter.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/orc/OrcReader.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/orc/OrcWriter.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/parquet/ParquetReader.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/parquet/ParquetWriter.java
+           __NO_COPYRIGHT__ in: java/bench/fetch-data.sh
+           __NO_COPYRIGHT__ in: java/bench/hive/src/java/org/apache/hadoop/hive/ql/io/orc/OrcBenchmarkUtilities.java
+           __NO_COPYRIGHT__ in: java/bench/hive/src/java/org/apache/orc/bench/hive/ColumnProjectionBenchmark.java
+           __NO_COPYRIGHT__ in: java/bench/hive/src/java/org/apache/orc/bench/hive/DecimalBench.java
+           __NO_COPYRIGHT__ in: java/bench/hive/src/java/org/apache/orc/bench/hive/FullReadBenchmark.java
+           __NO_COPYRIGHT__ in: java/bench/spark/src/java/org/apache/orc/bench/spark/SparkBenchmark.java
+           __NO_COPYRIGHT__ in: java/bench/spark/src/java/org/apache/orc/bench/spark/SparkSchema.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/BinaryColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/BooleanColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/CollectionColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/ColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/CompressionCodec.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/CompressionKind.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/DataMask.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/DataMaskDescription.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/DataReader.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/DateColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/DecimalColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/DoubleColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/EncryptionKey.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/EncryptionVariant.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/FileMetadata.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/IntegerColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/MemoryManager.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/OrcConf.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/OrcFile.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/OrcUtils.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/PhysicalWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/Reader.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/RecordReader.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/StringColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/StripeInformation.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/StripeStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/TimestampColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/TypeDescription.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/TypeDescriptionPrettyPrint.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/UnknownFormatException.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/Writer.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/AircompressorCodec.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/BitFieldReader.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/BitFieldWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/BufferChunk.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/ColumnStatisticsImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/ConvertTreeReaderFactory.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/DataReaderProperties.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/DirectDecompressionCodec.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/DynamicByteArray.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/DynamicIntArray.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/HadoopShimsFactory.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/InStream.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/IntegerReader.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/IntegerWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/MaskDescriptionImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/MemoryManager.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/MemoryManagerImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/OrcCodecPool.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/OrcIndex.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/OrcTail.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/OutStream.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/PhysicalFsWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/PositionProvider.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/PositionRecorder.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/PositionedOutputStream.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/ReaderImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RecordReaderImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RecordReaderUtils.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RedBlackTree.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RunLengthByteReader.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RunLengthByteWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RunLengthIntegerReader.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RunLengthIntegerReaderV2.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RunLengthIntegerWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/RunLengthIntegerWriterV2.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/SchemaEvolution.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/SerializationUtils.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/SnappyCodec.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/StreamName.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/StringRedBlackTree.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/TreeReaderFactory.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/Utf8Utils.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/WriterImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/WriterInternal.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/ZlibCodec.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/DecimalIdentity.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/DoubleIdentity.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/ListIdentity.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/LongIdentity.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/MapIdentity.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/MaskFactory.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/MaskProvider.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/NullifyMask.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/RedactMaskFactory.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/SHA256MaskFactory.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/StructIdentity.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/TimestampIdentity.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/mask/UnionIdentity.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/BinaryTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/BooleanTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/ByteTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/CharTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/DateTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/Decimal64TreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/DecimalTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/DoubleTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/EncryptionTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/FloatTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/IntegerTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/ListTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/MapTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/StreamOptions.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/StringBaseTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/StringTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/StructTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/TimestampTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/TreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/TreeWriterBase.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/UnionTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/VarcharTreeWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/WriterContext.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/WriterEncryptionKey.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/WriterEncryptionVariant.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/writer/WriterImplV2.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/util/BloomFilter.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/util/BloomFilterIO.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/util/BloomFilterUtf8.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/util/Murmur3.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestColumnStatistics.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestCorruptTypes.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestNewIntegerEncoding.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestOrcNullOptimization.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestOrcTimezone1.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestOrcTimezone2.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestOrcTimezone3.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestOrcTimezone4.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestOrcTimezonePPD.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestReader.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestStringDictionary.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestTypeDescription.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestUnicode.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestUnrolledBitPack.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestVectorOrcFile.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/MockDataReader.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/MockStream.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/MockStripe.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestBitFieldReader.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestBitPack.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestColumnStatisticsImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestCryptoUtils.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestDataReaderProperties.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestDynamicArray.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestInStream.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestIntegerCompressionReader.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestMemoryManager.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestOrcWideTable.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestOutStream.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestPhysicalFsWriter.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestPredicatePushDownBounds.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestRecordReaderImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestRunLengthByteReader.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestRunLengthIntegerReader.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestSchemaEvolution.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestSerializationUtils.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestStreamName.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestStringRedBlackTree.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestWriterImpl.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/TestZlib.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/mask/TestDataMask.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/mask/TestRedactMask.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/util/TestBloomFilter.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/util/TestMurmur3.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/util/TestOrcUtils.java
+           __NO_COPYRIGHT__ in: java/examples/src/java/org/apache/orc/examples/AdvancedWriter.java
+           __NO_COPYRIGHT__ in: java/examples/src/java/org/apache/orc/examples/CoreReader.java
+           __NO_COPYRIGHT__ in: java/examples/src/java/org/apache/orc/examples/CoreWriter.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcInputFormat.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcKey.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcList.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcMap.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcMapredRecordReader.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcMapredRecordWriter.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcOutputFormat.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcStruct.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcTimestamp.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcUnion.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/OrcValue.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapreduce/OrcInputFormat.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapreduce/OrcMapreduceRecordReader.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapreduce/OrcMapreduceRecordWriter.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapreduce/OrcOutputFormat.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapred/TestMrUnit.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapred/TestOrcList.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapred/TestOrcMap.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapred/TestOrcOutputFormat.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapred/TestOrcStruct.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapred/TestOrcTimestamp.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapred/TestOrcUnion.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapreduce/TestMapreduceOrcOutputFormat.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapreduce/TestMrUnit.java
+           __NO_COPYRIGHT__ in: java/shims/src/java/org/apache/orc/EncryptionAlgorithm.java
+           __NO_COPYRIGHT__ in: java/shims/src/java/org/apache/orc/impl/HadoopShims.java
+           __NO_COPYRIGHT__ in: java/shims/src/java/org/apache/orc/impl/HadoopShimsCurrent.java
+           __NO_COPYRIGHT__ in: java/shims/src/java/org/apache/orc/impl/HadoopShimsPre2_3.java
+           __NO_COPYRIGHT__ in: java/shims/src/java/org/apache/orc/impl/HadoopShimsPre2_6.java
+           __NO_COPYRIGHT__ in: java/shims/src/java/org/apache/orc/impl/HadoopShimsPre2_7.java
+           __NO_COPYRIGHT__ in: java/shims/src/java/org/apache/orc/impl/LocalKey.java
+           __NO_COPYRIGHT__ in: java/shims/src/java/org/apache/orc/impl/ZeroCopyShims.java
+           __NO_COPYRIGHT__ in: java/shims/src/test/org/apache/orc/impl/TestHadoopShimsPre2_7.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/convert/ConvertTool.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/convert/CsvReader.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/convert/JsonReader.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/BooleanType.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/HiveType.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/JsonSchemaFinder.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/JsonShredder.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/ListType.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/NullType.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/NumericType.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/StringType.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/StructType.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/json/UnionType.java
+           __NO_COPYRIGHT__ in: java/tools/src/test/org/apache/orc/impl/TestRLEv2.java
+           __NO_COPYRIGHT__ in: java/tools/src/test/org/apache/orc/tools/TestFileDump.java
+           __NO_COPYRIGHT__ in: java/tools/src/test/org/apache/orc/tools/TestJsonFileDump.java
+           __NO_COPYRIGHT__ in: java/tools/src/test/org/apache/orc/tools/convert/TestCsvReader.java
+           __NO_COPYRIGHT__ in: java/tools/src/test/org/apache/orc/tools/json/TestJsonSchemaFinder.java
+           __NO_COPYRIGHT__ in: proto/orc_proto.proto
+           __NO_COPYRIGHT__ in: tools/src/CSVFileImport.cc
+           __NO_COPYRIGHT__ in: tools/src/FileContents.cc
+           __NO_COPYRIGHT__ in: tools/src/FileMemory.cc
+           __NO_COPYRIGHT__ in: tools/src/FileMetadata.cc
+           __NO_COPYRIGHT__ in: tools/src/FileScan.cc
+           __NO_COPYRIGHT__ in: tools/src/FileStatistics.cc
+           __NO_COPYRIGHT__ in: tools/src/TimezoneDump.cc
+           __NO_COPYRIGHT__ in: tools/test/TestCSVFileImport.cc
+           __NO_COPYRIGHT__ in: tools/test/TestFileContents.cc
+           __NO_COPYRIGHT__ in: tools/test/TestFileMetadata.cc
+           __NO_COPYRIGHT__ in: tools/test/TestFileScan.cc
+           __NO_COPYRIGHT__ in: tools/test/TestFileStatistics.cc
+           __NO_COPYRIGHT__ in: tools/test/TestMatch.cc
+           __NO_COPYRIGHT__ in: tools/test/ToolTest.cc
+           __NO_COPYRIGHT__ in: tools/test/ToolTest.hh
+           __NO_COPYRIGHT__ in: tools/test/gzip.cc
+           __NO_COPYRIGHT__ in: tools/test/gzip.hh
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     .gitignore
+           .travis.yml
+           README.md
+           c++/libs/libhdfspp/libhdfspp.tar.gz
+           c++/libs/libhdfspp/pull_hdfs.sh
+           c++/test/test-orc.suppress
+           docker/.gitignore
+           docker/README
+           docker/debian8/apt.conf
+           docker/debian8/sources.list
+           docker/os-list.txt
+           examples/TestCSVFileImport.test10rows.csv
+           examples/TestOrcFile.columnProjection.orc
+           examples/TestOrcFile.emptyFile.orc
+           examples/TestOrcFile.metaData.orc
+           examples/TestOrcFile.test1.orc
+           examples/TestOrcFile.testDate1900.orc
+           examples/TestOrcFile.testDate2038.orc
+           examples/TestOrcFile.testMemoryManagementV11.orc
+           examples/TestOrcFile.testMemoryManagementV12.orc
+           examples/TestOrcFile.testPredicatePushdown.orc
+           examples/TestOrcFile.testSnappy.orc
+           examples/TestOrcFile.testStringAndBinaryStatistics.orc
+           examples/TestOrcFile.testStripeLevelStats.orc
+           examples/TestOrcFile.testTimestamp.orc
+           examples/TestOrcFile.testUnionAndTimestamp.orc
+           examples/TestOrcFile.testWithoutIndex.orc
+           examples/TestVectorOrcFile.testLz4.orc
+           examples/TestVectorOrcFile.testLzo.orc
+           examples/decimal.orc
+           examples/demo-11-zlib.orc
+           examples/demo-12-zlib.orc
+           examples/expected/TestOrcFile.columnProjection.jsn.gz
+           examples/expected/TestOrcFile.emptyFile.jsn.gz
+           examples/expected/TestOrcFile.metaData.jsn.gz
+           examples/expected/TestOrcFile.test1.jsn.gz
+           examples/expected/TestOrcFile.testDate1900.jsn.gz
+           examples/expected/TestOrcFile.testDate2038.jsn.gz
+           examples/expected/TestOrcFile.testMemoryManagementV11.jsn.gz
+           examples/expected/TestOrcFile.testMemoryManagementV12.jsn.gz
+           examples/expected/TestOrcFile.testPredicatePushdown.jsn.gz
+           examples/expected/TestOrcFile.testSnappy.jsn.gz
+           examples/expected/TestOrcFile.testStringAndBinaryStatistics.jsn.gz
+           examples/expected/TestOrcFile.testStripeLevelStats.jsn.gz
+           examples/expected/TestOrcFile.testTimestamp.jsn.gz
+           examples/expected/TestOrcFile.testUnionAndTimestamp.jsn.gz
+           examples/expected/TestOrcFile.testWithoutIndex.jsn.gz
+           examples/expected/TestVectorOrcFile.testLz4.jsn.gz
+           examples/expected/TestVectorOrcFile.testLzo.jsn.gz
+           examples/expected/decimal.jsn.gz
+           examples/expected/nulls-at-end-snappy.jsn.gz
+           examples/expected/orc-file-11-format.jsn.gz
+           examples/expected/orc_index_int_string.jsn.gz
+           examples/expected/orc_split_elim.jsn.gz
+           examples/expected/orc_split_elim_new.jsn.gz
+           examples/expected/over1k_bloom.jsn.gz
+           examples/nulls-at-end-snappy.orc
+           examples/orc-file-11-format.orc
+           examples/orc_index_int_string.orc
+           examples/orc_no_format.orc
+           examples/orc_split_elim.orc
+           examples/orc_split_elim_new.orc
+           examples/over1k_bloom.orc
+           examples/version1999.orc
+           examples/zero.orc
+           java/bench/.gitignore
+           java/bench/README.md
+           java/bench/core/src/resources/github.schema
+           java/bench/core/src/resources/sales.schema
+           java/bench/core/src/resources/taxi.schema
+           java/core/src/test/resources/orc-file-11-format.orc
+           java/tools/src/test/resources/orc-file-dump-bloomfilter.out
+           java/tools/src/test/resources/orc-file-dump-bloomfilter2.out
+           java/tools/src/test/resources/orc-file-dump-dictionary-threshold.out
+           java/tools/src/test/resources/orc-file-dump.json
+           java/tools/src/test/resources/orc-file-dump.out
+           java/tools/src/test/resources/orc-file-has-null.out
+           site/.gitignore
+           site/.htaccess
+           site/Gemfile
+           site/README.md
+           site/_config.yml
+           site/_data/docs.yml
+           site/_data/releases.yml
+           site/_docs/acid.md
+           site/_docs/adopters.md
+           site/_docs/building.md
+           site/_docs/core-cpp.md
+           site/_docs/core-java.md
+           site/_docs/cpp-tools.md
+           site/_docs/hive-config.md
+           site/_docs/hive-ddl.md
+           site/_docs/index.md
+           site/_docs/indexes.md
+           site/_docs/java-tools.md
+           site/_docs/mapred.md
+           site/_docs/mapreduce.md
+           site/_docs/releases.md
+           site/_docs/types.md
+           site/_includes/docs_option.html
+           site/_includes/docs_ul.html
+           site/_includes/known_issues.md
+           site/_includes/orc_1.1.md
+           site/_includes/orc_1.2.md
+           site/_includes/orc_1.3.md
+           site/_includes/orc_1.4.md
+           site/_includes/orc_1.5.md
+           site/_includes/release_description.md
+           site/_includes/release_table.html
+           site/_includes/section_nav.html
+           site/_layouts/default.html
+           site/_layouts/docs.html
+           site/_layouts/news.html
+           site/_layouts/news_item.html
+           site/_layouts/page.html
+           site/_posts/2015-04-22-orc-as-tlp.md
+           site/_posts/2015-05-11-new-committers.md
+           site/_posts/2015-06-26-new-logo.md
+           site/_posts/2015-11-19-aliaksei-on-pmc.md
+           site/_posts/2016-01-25-ORC-1.0.0.md
+           site/_posts/2016-06-10-ORC-1.1.0.md
+           site/_posts/2016-06-13-ORC-1.1.1.md
+           site/_posts/2016-06-28-file-format-talk.md
+           site/_posts/2016-07-08-ORC-1.1.2.md
+           site/_posts/2016-08-25-ORC-1.2.0.md
+           site/_posts/2016-10-05-ORC-1.2.1.md
+           site/_posts/2016-12-01-ORC-1.2.2.md
+           site/_posts/2016-12-12-ORC-1.2.3.md
+           site/_posts/2016-12-15-new-committers.md
+           site/_posts/2017-01-04-gopal-on-pmc.md
+           site/_posts/2017-01-23-ORC-1.3.0.md
+           site/_posts/2017-02-03-ORC-1.3.1.md
+           site/_posts/2017-02-13-ORC-1.3.2.md
+           site/_posts/2017-02-21-ORC-1.3.3.md
+           site/_posts/2017-05-08-ORC-1.4.0.md
+           site/_posts/2017-05-16-new-committer.md
+           site/_posts/2017-09-06-new-pmc.md
+           site/_posts/2017-10-16-ORC-1.3.4.md
+           site/_posts/2017-10-16-ORC-1.4.1.md
+           site/_posts/2018-01-23-ORC-1.4.2.md
+           site/_posts/2018-02-09-ORC-1.4.3.md
+           site/_posts/2018-03-27-add-xiening-and-gang.md
+           site/_posts/2018-05-14-ORC-1.4.4.md
+           site/_posts/2018-05-14-ORC-1.5.0.md
+           site/_posts/2018-05-25-ORC-1.5.1.md
+           site/_posts/2018-06-29-ORC-1.5.2.md
+           site/_posts/2018-09-25-ORC-1.5.3.md
+           site/_posts/2018-12-21-ORC-1.5.4.md
+           site/_posts/2019-01-10-add-dongjoon.md
+           site/_posts/2019-01-11-gang-pmc.md
+           site/_posts/2019-03-14-ORC-1.5.5.md
+           site/_posts/2019-06-10-renat-and-sandeep.md
+           site/_posts/2019-06-27-ORC-1.5.6.md
+           site/_sass/_font-awesome.scss
+           site/_sass/_gridism.scss
+           site/_sass/_mixins.scss
+           site/_sass/_normalize.scss
+           site/_sass/_pygments.scss
+           site/api/hive-storage-api/package-list
+           site/api/hive-storage-api/script.js
+           site/api/hive-storage-api/stylesheet.css
+           site/api/orc-core/package-list
+           site/api/orc-core/script.js
+           site/api/orc-core/stylesheet.css
+           site/api/orc-mapreduce/package-list
+           site/api/orc-mapreduce/script.js
+           site/api/orc-mapreduce/stylesheet.css
+           site/api/orc-shims/package-list
+           site/api/orc-shims/script.js
+           site/api/orc-shims/stylesheet.css
+           site/api/orc-tools/package-list
+           site/api/orc-tools/script.js
+           site/api/orc-tools/stylesheet.css
+           site/css/screen.scss
+           site/develop/bylaws.md
+           site/develop/coding.md
+           site/develop/committers.md
+           site/develop/index.md
+           site/develop/make-release.md
+           site/favicon.ico
+           site/fonts/fontawesome-webfont.eot
+           site/fonts/fontawesome-webfont.ttf
+           site/fonts/fontawesome-webfont.woff
+           site/help/index.md
+           site/img/BloomFilter.png
+           site/img/CompressionStream.png
+           site/img/OrcFileLayout.png
+           site/img/TreeWriters.png
+           site/img/asf_logo.png
+           site/img/logo.png
+           site/index.html
+           site/js/html5shiv.min.js
+           site/news/index.html
+           site/news/releases/index.html
+           site/security/CVE-2018-8015.md
+           site/security/index.md
+           site/specification/ORCv0.md
+           site/specification/ORCv1.md
+           site/specification/ORCv2.md
+           site/specification/index.md
+           site/talks/index.md
+           snap/.gitignore
+           snap/README.md
+           snap/snapcraft.yaml
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     CMakeLists.txt
+           c++/CMakeLists.txt
+           c++/include/CMakeLists.txt
+           c++/include/orc/orc-config.hh.in
+           c++/src/CMakeLists.txt
+           c++/src/LzoDecompressor.cc
+           c++/src/wrap/coded-stream-wrapper.h
+           c++/src/wrap/gmock.h
+           c++/src/wrap/gtest-wrapper.h
+           c++/src/wrap/orc-proto-wrapper.cc
+           c++/src/wrap/orc-proto-wrapper.hh
+           c++/src/wrap/snappy-wrapper.h
+           c++/src/wrap/zero-copy-stream-wrapper.h
+           c++/test/CMakeLists.txt
+           cmake_modules/CheckSourceCompiles.cmake
+           cmake_modules/FindGTest.cmake
+           cmake_modules/FindLZ4.cmake
+           cmake_modules/FindProtobuf.cmake
+           cmake_modules/FindSnappy.cmake
+           cmake_modules/FindZLIB.cmake
+           cmake_modules/FindZSTD.cmake
+           cmake_modules/ThirdpartyToolchain.cmake
+           java/CMakeLists.txt
+           java/bench/core/src/resources/log4j.properties
+           java/core/src/test/org/apache/orc/impl/TestOrcLargeStripe.java
+           java/core/src/test/org/apache/orc/impl/TestReaderImpl.java
+           java/core/src/test/resources/log4j.properties
+           java/mapreduce/src/test/resources/log4j.properties
+           java/shims/src/test/resources/log4j.properties
+           java/tools/src/test/resources/log4j.properties
+           snap/vagrant-provision.sh
+           tools/CMakeLists.txt
+           tools/test/CMakeLists.txt
+Copyright: 2015-2016 The Apache Software Foundation.
+           __NO_COPYRIGHT__ in: CMakeLists.txt
+           __NO_COPYRIGHT__ in: c++/CMakeLists.txt
+           __NO_COPYRIGHT__ in: c++/include/CMakeLists.txt
+           __NO_COPYRIGHT__ in: c++/include/orc/orc-config.hh.in
+           __NO_COPYRIGHT__ in: c++/src/CMakeLists.txt
+           __NO_COPYRIGHT__ in: c++/src/LzoDecompressor.cc
+           __NO_COPYRIGHT__ in: c++/src/wrap/coded-stream-wrapper.h
+           __NO_COPYRIGHT__ in: c++/src/wrap/gmock.h
+           __NO_COPYRIGHT__ in: c++/src/wrap/gtest-wrapper.h
+           __NO_COPYRIGHT__ in: c++/src/wrap/orc-proto-wrapper.cc
+           __NO_COPYRIGHT__ in: c++/src/wrap/orc-proto-wrapper.hh
+           __NO_COPYRIGHT__ in: c++/src/wrap/snappy-wrapper.h
+           __NO_COPYRIGHT__ in: c++/src/wrap/zero-copy-stream-wrapper.h
+           __NO_COPYRIGHT__ in: c++/test/CMakeLists.txt
+           __NO_COPYRIGHT__ in: cmake_modules/CheckSourceCompiles.cmake
+           __NO_COPYRIGHT__ in: cmake_modules/FindGTest.cmake
+           __NO_COPYRIGHT__ in: cmake_modules/FindLZ4.cmake
+           __NO_COPYRIGHT__ in: cmake_modules/FindProtobuf.cmake
+           __NO_COPYRIGHT__ in: cmake_modules/FindSnappy.cmake
+           __NO_COPYRIGHT__ in: cmake_modules/FindZLIB.cmake
+           __NO_COPYRIGHT__ in: cmake_modules/FindZSTD.cmake
+           __NO_COPYRIGHT__ in: cmake_modules/ThirdpartyToolchain.cmake
+           __NO_COPYRIGHT__ in: java/CMakeLists.txt
+           __NO_COPYRIGHT__ in: java/bench/core/src/resources/log4j.properties
+           __NO_COPYRIGHT__ in: java/core/src/test/resources/log4j.properties
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/resources/log4j.properties
+           __NO_COPYRIGHT__ in: java/shims/src/test/resources/log4j.properties
+           __NO_COPYRIGHT__ in: java/tools/src/test/resources/log4j.properties
+           __NO_COPYRIGHT__ in: snap/vagrant-provision.sh
+           __NO_COPYRIGHT__ in: tools/CMakeLists.txt
+           __NO_COPYRIGHT__ in: tools/test/CMakeLists.txt
+License:   Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     java/bench/core/src/java/org/apache/orc/bench/core/Driver.java
+           java/bench/core/src/java/org/apache/orc/bench/core/ReadCounters.java
+           java/bench/core/src/java/org/apache/orc/bench/core/RecordCounters.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/BatchReader.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/BatchWriter.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/GenerateVariants.java
+           java/bench/core/src/java/org/apache/orc/bench/core/convert/ScanVariants.java
+           java/core/src/java/org/apache/orc/FileFormatException.java
+           java/core/src/java/org/apache/orc/impl/AcidStats.java
+           java/core/src/java/org/apache/orc/impl/BufferChunkList.java
+           java/core/src/java/org/apache/orc/impl/CryptoUtils.java
+           java/core/src/java/org/apache/orc/impl/OrcAcidUtils.java
+           java/core/src/java/org/apache/orc/impl/reader/ReaderEncryption.java
+           java/core/src/java/org/apache/orc/impl/reader/ReaderEncryptionKey.java
+           java/core/src/java/org/apache/orc/impl/reader/ReaderEncryptionVariant.java
+           java/core/src/java/org/apache/orc/impl/reader/StripePlanner.java
+           java/examples/src/java/org/apache/orc/examples/Driver.java
+           java/tools/src/java/org/apache/orc/tools/Driver.java
+           java/tools/src/java/org/apache/orc/tools/FileDump.java
+           java/tools/src/java/org/apache/orc/tools/JsonFileDump.java
+           java/tools/src/java/org/apache/orc/tools/KeyTool.java
+           java/tools/src/java/org/apache/orc/tools/PrintData.java
+           java/tools/src/java/org/apache/orc/tools/PrintVersion.java
+           java/tools/src/java/org/apache/orc/tools/ScanData.java
+Copyright: __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/Driver.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/ReadCounters.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/RecordCounters.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/BatchReader.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/BatchWriter.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/GenerateVariants.java
+           __NO_COPYRIGHT__ in: java/bench/core/src/java/org/apache/orc/bench/core/convert/ScanVariants.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/FileFormatException.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/AcidStats.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/BufferChunkList.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/CryptoUtils.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/OrcAcidUtils.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/reader/ReaderEncryption.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/reader/ReaderEncryptionKey.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/reader/ReaderEncryptionVariant.java
+           __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/impl/reader/StripePlanner.java
+           __NO_COPYRIGHT__ in: java/examples/src/java/org/apache/orc/examples/Driver.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/Driver.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/FileDump.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/JsonFileDump.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/KeyTool.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/PrintData.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/PrintVersion.java
+           __NO_COPYRIGHT__ in: java/tools/src/java/org/apache/orc/tools/ScanData.java
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ <p/>
+ http://www.apache.org/licenses/LICENSE-2.0
+ <p/>
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     java/core/src/java/org/apache/orc/InMemoryKeystore.java
+           java/core/src/test/org/apache/orc/TestInMemoryKeystore.java
+           java/core/src/test/org/apache/orc/impl/mask/TestSHA256Mask.java
+           java/core/src/test/org/apache/orc/impl/mask/TestUnmaskRange.java
+           java/mapreduce/src/test/org/apache/orc/mapred/TestOrcFileEvolution.java
+Copyright: __NO_COPYRIGHT__ in: java/core/src/java/org/apache/orc/InMemoryKeystore.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/TestInMemoryKeystore.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/mask/TestSHA256Mask.java
+           __NO_COPYRIGHT__ in: java/core/src/test/org/apache/orc/impl/mask/TestUnmaskRange.java
+           __NO_COPYRIGHT__ in: java/mapreduce/src/test/org/apache/orc/mapred/TestOrcFileEvolution.java
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ <p>
+ http://www.apache.org/licenses/LICENSE-2.0
+ <p>
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     java/core/src/resources/META-INF/services/org.apache.orc.DataMask$Provider
+           java/shims/src/test/resources/META-INF/services/org.apache.hadoop.crypto.key.KeyProviderFactory
+           snap/Vagrantfile
+Copyright: __NO_COPYRIGHT__ in: java/core/src/resources/META-INF/services/org.apache.orc.DataMask$Provider
+           __NO_COPYRIGHT__ in: java/shims/src/test/resources/META-INF/services/org.apache.hadoop.crypto.key.KeyProviderFactory
+           __NO_COPYRIGHT__ in: snap/Vagrantfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     c++/src/RLEV2Util.cc
+           c++/src/RleEncoderV2.cc
+Copyright: __NO_COPYRIGHT__ in: c++/src/RLEV2Util.cc
+           __NO_COPYRIGHT__ in: c++/src/RleEncoderV2.cc
+License:   __UNKNOWN__
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with option work for additional information
+ regarding copyright ownership.  The ASF licenses option file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use option file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+Files:     docker/ubuntu14/Dockerfile
+Copyright: __NO_COPYRIGHT__ in: docker/ubuntu14/Dockerfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ ORC compile for Ubuntu 14
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     cmake_modules/FindCyrusSASL.cmake
+Copyright: __NO_COPYRIGHT__ in: cmake_modules/FindCyrusSASL.cmake
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ .
+ - Find Cyrus SASL (sasl.h, libsasl2.so)
+ .
+ This module defines
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     docker/ubuntu16-clang5/Dockerfile
+Copyright: __NO_COPYRIGHT__ in: docker/ubuntu16-clang5/Dockerfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ ORC compile for Ubuntu 16 (clang 5)
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     docker/centos6/Dockerfile
+Copyright: __NO_COPYRIGHT__ in: docker/centos6/Dockerfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ ORC compile for CentOS 6
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     docker/debian9/Dockerfile
+Copyright: __NO_COPYRIGHT__ in: docker/debian9/Dockerfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ ORC compile for Debian 9
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     docker/centos7/Dockerfile
+Copyright: __NO_COPYRIGHT__ in: docker/centos7/Dockerfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ ORC compile for CentOS 7
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     docker/ubuntu18/Dockerfile
+Copyright: __NO_COPYRIGHT__ in: docker/ubuntu18/Dockerfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ ORC compile for Ubuntu 18
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     tools/src/CMakeLists.txt
+Copyright: __NO_COPYRIGHT__ in: tools/src/CMakeLists.txt
+License:   Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ TODO:
+ - orc-metadata relies on the protobuf routines, meaning protobuf and
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     c++/Doxyfile
+Copyright: __NO_COPYRIGHT__ in: c++/Doxyfile
+License:   Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ Doxyfile 1.8.7
+ .
+ This file describes the settings to be used by the documentation system
+ doxygen (www.doxygen.org) for a project.
+ .
+ All text after a double hash (##) is considered a comment and is placed in
+ front of the TAG it is preceding.
+ .
+ All text after a single hash (#) is considered a comment and will be ignored.
+ The format is:
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     docker/ubuntu16/Dockerfile
+Copyright: __NO_COPYRIGHT__ in: docker/ubuntu16/Dockerfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ ORC compile for Ubuntu 16
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     docker/debian8/Dockerfile
+Copyright: __NO_COPYRIGHT__ in: docker/debian8/Dockerfile
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ ORC compile for Debian 8
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     java/mapreduce/src/java/org/apache/orc/mapred/package-info.java
+Copyright: __NO_COPYRIGHT__ in: java/mapreduce/src/java/org/apache/orc/mapred/package-info.java
+License:   Apache-2.0
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ <p>
+ This package provides convenient access to ORC files using Hadoop's
+ MapReduce InputFormat and OutputFormat.
+ </p>
+ .
+ <p>
+ For reading, set the InputFormat to OrcInputFormat and your map will
+ receive a stream of OrcStruct objects for each row. (Note that ORC files
+ may have any type as the root object instead of structs and then the
+ object type will be the appropriate one.)
+ </p>
+ .
+ <p>The mapping of types is:</p>
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     c++/libs/libhdfspp/imported_timestamp
+Copyright: __NO_COPYRIGHT__ in: c++/libs/libhdfspp/imported_timestamp
+License:   __UNKNOWN__
+ fixed warnings3
+ diffs: --------------
+
+Files:     NOTICE
+Copyright: 2013-2019 The Apache Software Foundation
+License:   __UNKNOWN__
+ This product includes software developed by The Apache Software
+ Foundation (http://www.apache.org/).
+ .
+ This product includes software developed by Hewlett-Packard:
+ (c) Copyright [2014-2015] Hewlett-Packard Development Company, L.P
+
+Files:     site/js/respond.min.js
+Copyright: __NO_COPYRIGHT__ in: site/js/respond.min.js
+License:   __UNKNOWN__
+ Licensed under https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         java/pom.xml
+#         java/core/pom.xml
+#         java/core/src/findbugs/exclude.xml
+#         java/bench/pom.xml
+#         java/bench/core/pom.xml
+#         java/bench/core/src/assembly/uber.xml
+#         java/bench/core/src/findbugs/exclude.xml
+#         java/bench/hive/pom.xml
+#         java/bench/hive/src/assembly/uber.xml
+#         java/bench/hive/src/findbugs/exclude.xml
+#         java/bench/spark/pom.xml
+#         java/mapreduce/pom.xml
+#         java/mapreduce/src/findbugs/exclude.xml
+#         java/examples/pom.xml
+#         java/examples/src/assembly/uber.xml
+#         java/examples/src/findbugs/exclude.xml
+#         java/tools/pom.xml
+#         java/tools/src/assembly/uber.xml
+#         java/tools/src/findbugs/exclude.xml
+#         java/shims/pom.xml
+#         java/shims/src/findbugs/exclude.xml
+#         site/doap_orc.rdf
+#         site/api/orc-mapreduce/allclasses-noframe.html
+#         site/api/orc-mapreduce/serialized-form.html
+#         site/api/orc-mapreduce/constant-values.html
+#         site/api/orc-mapreduce/overview-summary.html
+#         site/api/orc-mapreduce/overview-frame.html
+#         site/api/orc-mapreduce/overview-tree.html
+#         site/api/orc-mapreduce/index.html
+#         site/api/orc-mapreduce/allclasses-frame.html
+#         site/api/orc-mapreduce/help-doc.html
+#         site/api/orc-mapreduce/deprecated-list.html
+#         site/api/orc-mapreduce/index-all.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/package-tree.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/package-use.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/OrcInputFormat.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/OrcOutputFormat.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/package-summary.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/OrcMapreduceRecordWriter.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/package-frame.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/OrcMapreduceRecordReader.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/class-use/OrcInputFormat.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/class-use/OrcOutputFormat.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/class-use/OrcMapreduceRecordWriter.html
+#         site/api/orc-mapreduce/org/apache/orc/mapreduce/class-use/OrcMapreduceRecordReader.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/package-tree.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcValue.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcList.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcMap.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcUnion.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/package-use.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcStruct.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcInputFormat.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcMapredRecordReader.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcOutputFormat.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/package-summary.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcMapredRecordWriter.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcTimestamp.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/OrcKey.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/package-frame.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcValue.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcList.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcMap.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcUnion.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcStruct.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcInputFormat.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcMapredRecordReader.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcOutputFormat.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcMapredRecordWriter.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcTimestamp.html
+#         site/api/orc-mapreduce/org/apache/orc/mapred/class-use/OrcKey.html
+#         site/api/orc-core/allclasses-noframe.html
+#         site/api/orc-core/serialized-form.html
+#         site/api/orc-core/constant-values.html
+#         site/api/orc-core/overview-summary.html
+#         site/api/orc-core/overview-frame.html
+#         site/api/orc-core/overview-tree.html
+#         site/api/orc-core/index.html
+#         site/api/orc-core/allclasses-frame.html
+#         site/api/orc-core/help-doc.html
+#         site/api/orc-core/deprecated-list.html
+#         site/api/orc-core/index-all.html
+#         site/api/orc-core/org/apache/orc/TypeDescription.html
+#         site/api/orc-core/org/apache/orc/OrcUtils.html
+#         site/api/orc-core/org/apache/orc/OrcProto.TimestampStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.RowIndexEntry.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BloomFilterIndexOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Stream.Kind.html
+#         site/api/orc-core/org/apache/orc/DecimalColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StringStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/package-tree.html
+#         site/api/orc-core/org/apache/orc/OrcFile.Version.html
+#         site/api/orc-core/org/apache/orc/ColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/DataMask.Standard.html
+#         site/api/orc-core/org/apache/orc/OrcProto.UserMetadataItem.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.ColumnStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/CompressionCodec.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeFooter.html
+#         site/api/orc-core/org/apache/orc/TimestampColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.UserMetadataItemOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.ColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.PostScript.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Type.Kind.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DateStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.IntegerStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.RowIndexEntryOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Stream.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DateStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeFooter.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcFile.html
+#         site/api/orc-core/org/apache/orc/OrcFile.WriterOptions.html
+#         site/api/orc-core/org/apache/orc/UnknownFormatException.html
+#         site/api/orc-core/org/apache/orc/BinaryColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/DateColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.FileTailOrBuilder.html
+#         site/api/orc-core/org/apache/orc/RecordReader.html
+#         site/api/orc-core/org/apache/orc/OrcConf.html
+#         site/api/orc-core/org/apache/orc/OrcFile.WriterVersion.html
+#         site/api/orc-core/org/apache/orc/OrcProto.RowIndexEntry.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.TimestampStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Stream.html
+#         site/api/orc-core/org/apache/orc/MemoryManager.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StringStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DecimalStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DecimalStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeInformation.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcFile.BloomFilterVersion.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Type.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeFooterOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.CompressionKind.html
+#         site/api/orc-core/org/apache/orc/OrcProto.IntegerStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/TypeDescription.RowBatchVersion.html
+#         site/api/orc-core/org/apache/orc/package-use.html
+#         site/api/orc-core/org/apache/orc/CompressionKind.html
+#         site/api/orc-core/org/apache/orc/DataMask.Factory.html
+#         site/api/orc-core/org/apache/orc/StripeStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BucketStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.FooterOrBuilder.html
+#         site/api/orc-core/org/apache/orc/BooleanColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.RowIndex.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.ColumnEncoding.html
+#         site/api/orc-core/org/apache/orc/PhysicalWriter.OutputReceiver.html
+#         site/api/orc-core/org/apache/orc/OrcFile.ReaderOptions.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BinaryStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/DataMask.Provider.html
+#         site/api/orc-core/org/apache/orc/DataMask.html
+#         site/api/orc-core/org/apache/orc/IntegerColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DateStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.FileTail.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StringStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DoubleStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.RowIndexOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BloomFilter.html
+#         site/api/orc-core/org/apache/orc/Writer.html
+#         site/api/orc-core/org/apache/orc/package-summary.html
+#         site/api/orc-core/org/apache/orc/Reader.Options.html
+#         site/api/orc-core/org/apache/orc/FileFormatException.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DoubleStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BinaryStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Footer.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcFile.WriterCallback.html
+#         site/api/orc-core/org/apache/orc/OrcProto.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Metadata.Builder.html
+#         site/api/orc-core/org/apache/orc/DoubleColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcFile.WriterContext.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BucketStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BloomFilterIndex.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Metadata.html
+#         site/api/orc-core/org/apache/orc/StringColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeInformationOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeInformation.html
+#         site/api/orc-core/org/apache/orc/Reader.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BloomFilter.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.UserMetadataItem.html
+#         site/api/orc-core/org/apache/orc/OrcProto.ColumnStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BucketStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcFile.CompressionStrategy.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DecimalStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/DataReader.html
+#         site/api/orc-core/org/apache/orc/CompressionCodec.Modifier.html
+#         site/api/orc-core/org/apache/orc/StripeInformation.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Type.html
+#         site/api/orc-core/org/apache/orc/OrcProto.PostScript.html
+#         site/api/orc-core/org/apache/orc/OrcProto.TimestampStatistics.html
+#         site/api/orc-core/org/apache/orc/OrcFile.EncodingStrategy.html
+#         site/api/orc-core/org/apache/orc/OrcFile.WriterImplementation.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StripeStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.IntegerStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BloomFilterIndex.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.ColumnEncoding.Kind.html
+#         site/api/orc-core/org/apache/orc/OrcProto.FileTail.Builder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BloomFilterOrBuilder.html
+#         site/api/orc-core/org/apache/orc/TypeDescriptionPrettyPrint.html
+#         site/api/orc-core/org/apache/orc/FileMetadata.html
+#         site/api/orc-core/org/apache/orc/OrcProto.PostScriptOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.ColumnEncoding.Builder.html
+#         site/api/orc-core/org/apache/orc/PhysicalWriter.html
+#         site/api/orc-core/org/apache/orc/InMemoryKeystore.html
+#         site/api/orc-core/org/apache/orc/OrcProto.TypeOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.MetadataOrBuilder.html
+#         site/api/orc-core/org/apache/orc/TypeDescription.Category.html
+#         site/api/orc-core/org/apache/orc/OrcProto.DoubleStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/package-frame.html
+#         site/api/orc-core/org/apache/orc/MemoryManager.Callback.html
+#         site/api/orc-core/org/apache/orc/OrcProto.ColumnEncodingOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.StreamOrBuilder.html
+#         site/api/orc-core/org/apache/orc/OrcProto.Footer.html
+#         site/api/orc-core/org/apache/orc/OrcProto.RowIndex.html
+#         site/api/orc-core/org/apache/orc/OrcProto.BinaryStatistics.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.TimestampFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.DateTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DateFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.Context.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DoubleFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ReaderImpl.StripeInformationImpl.html
+#         site/api/orc-core/org/apache/orc/impl/package-tree.html
+#         site/api/orc-core/org/apache/orc/impl/RunLengthByteReader.html
+#         site/api/orc-core/org/apache/orc/impl/WriterInternal.html
+#         site/api/orc-core/org/apache/orc/impl/WriterImpl.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.DoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.Decimal64TreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.BinaryTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DoubleFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/PhysicalFsWriter.html
+#         site/api/orc-core/org/apache/orc/impl/InStream.UncompressedStream.html
+#         site/api/orc-core/org/apache/orc/impl/StringRedBlackTree.VisitorContext.html
+#         site/api/orc-core/org/apache/orc/impl/SettableUncompressedStream.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.StringDictionaryTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/MemoryManagerImpl.html
+#         site/api/orc-core/org/apache/orc/impl/RecordReaderImpl.PositionProviderImpl.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DecimalFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/OrcAcidUtils.html
+#         site/api/orc-core/org/apache/orc/impl/StreamName.Area.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.FloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.ListTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.FloatFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/RunLengthIntegerReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.TimestampFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.TimestampFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ReaderImpl.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShims.html
+#         site/api/orc-core/org/apache/orc/impl/ColumnStatisticsImpl.html
+#         site/api/orc-core/org/apache/orc/impl/StringRedBlackTree.html
+#         site/api/orc-core/org/apache/orc/impl/DynamicIntArray.html
+#         site/api/orc-core/org/apache/orc/impl/SchemaEvolution.html
+#         site/api/orc-core/org/apache/orc/impl/StreamName.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.AnyIntegerFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.StringGroupFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/OutStream.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.AnyIntegerFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShimsCurrent.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShims.ZeroCopyReaderShim.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.StringGroupFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/MemoryManager.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.StringTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DecimalFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.BinaryFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/RunLengthIntegerWriterV2.html
+#         site/api/orc-core/org/apache/orc/impl/IntegerWriter.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShims.TextReaderShim.html
+#         site/api/orc-core/org/apache/orc/impl/SnappyCodec.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DecimalFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.MapTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/Utf8Utils.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.UnionTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/package-use.html
+#         site/api/orc-core/org/apache/orc/impl/AircompressorCodec.html
+#         site/api/orc-core/org/apache/orc/impl/RunLengthIntegerReaderV2.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.StringGroupFromDateTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/DataReaderProperties.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DecimalFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/SchemaEvolution.IllegalEvolutionException.html
+#         site/api/orc-core/org/apache/orc/impl/InStream.html
+#         site/api/orc-core/org/apache/orc/impl/SerializationUtils.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.IntTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.ByteTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.NullTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DoubleFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/DynamicByteArray.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShimsFactory.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.TimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.FloatFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/SerializationUtils.FixedBitSizes.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.BytesColumnVectorUtil.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.StringGroupFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.TimestampFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ColumnStatisticsImpl.BinaryStatisticsImpl.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.AnyIntegerFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/RecordReaderImpl.html
+#         site/api/orc-core/org/apache/orc/impl/PositionRecorder.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DateFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.AnyIntegerFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/package-summary.html
+#         site/api/orc-core/org/apache/orc/impl/RecordReaderUtils.html
+#         site/api/orc-core/org/apache/orc/impl/OrcTail.html
+#         site/api/orc-core/org/apache/orc/impl/RunLengthIntegerWriterV2.EncodingType.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.BooleanTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.FloatFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.StringGroupFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/BufferChunk.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.StringGroupFromBinaryTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShims.DirectCompressionType.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.TreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.FloatFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.ReaderContext.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.ConvertTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.VarcharTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.StringDirectTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/OutStream.OutputReceiver.html
+#         site/api/orc-core/org/apache/orc/impl/RunLengthIntegerWriter.html
+#         site/api/orc-core/org/apache/orc/impl/RunLengthByteWriter.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DoubleFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/RecordReaderUtils.ByteBufferAllocatorPool.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShims_2_2.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.DecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.AnyIntegerFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/BitFieldWriter.html
+#         site/api/orc-core/org/apache/orc/impl/ColumnStatisticsImpl.StringStatisticsImpl.html
+#         site/api/orc-core/org/apache/orc/impl/ZlibCodec.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.AnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/RecordReaderImpl.SargApplier.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.ShortTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/DataReaderProperties.Builder.html
+#         site/api/orc-core/org/apache/orc/impl/PositionProvider.html
+#         site/api/orc-core/org/apache/orc/impl/BitFieldReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.StringGroupFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.AnyIntegerFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.LongTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.TimestampFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShims.Factory.html
+#         site/api/orc-core/org/apache/orc/impl/DirectDecompressionCodec.html
+#         site/api/orc-core/org/apache/orc/impl/AcidStats.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DecimalFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShims.ByteBufferPoolShim.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.CharTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DoubleFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/TreeReaderFactory.StructTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.DecimalFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/OrcIndex.html
+#         site/api/orc-core/org/apache/orc/impl/HadoopShims.DirectDecompressor.html
+#         site/api/orc-core/org/apache/orc/impl/StringRedBlackTree.Visitor.html
+#         site/api/orc-core/org/apache/orc/impl/package-frame.html
+#         site/api/orc-core/org/apache/orc/impl/MemoryManager.Callback.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.StringGroupFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.FloatFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/PositionedOutputStream.html
+#         site/api/orc-core/org/apache/orc/impl/ConvertTreeReaderFactory.TimestampFromDateTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/IntegerReader.html
+#         site/api/orc-core/org/apache/orc/impl/OrcCodecPool.html
+#         site/api/orc-core/org/apache/orc/impl/mask/RedactMaskFactory.html
+#         site/api/orc-core/org/apache/orc/impl/mask/package-tree.html
+#         site/api/orc-core/org/apache/orc/impl/mask/DecimalIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/MapIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/DoubleIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/SHA256MaskFactory.html
+#         site/api/orc-core/org/apache/orc/impl/mask/ListIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/package-use.html
+#         site/api/orc-core/org/apache/orc/impl/mask/UnionIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/StructIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/LongIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/MaskProvider.html
+#         site/api/orc-core/org/apache/orc/impl/mask/package-summary.html
+#         site/api/orc-core/org/apache/orc/impl/mask/MaskFactory.html
+#         site/api/orc-core/org/apache/orc/impl/mask/NullifyMask.html
+#         site/api/orc-core/org/apache/orc/impl/mask/package-frame.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/RedactMaskFactory.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/DecimalIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/MapIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/DoubleIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/SHA256MaskFactory.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/ListIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/UnionIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/StructIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/LongIdentity.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/MaskProvider.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/MaskFactory.html
+#         site/api/orc-core/org/apache/orc/impl/mask/class-use/NullifyMask.html
+#         site/api/orc-core/org/apache/orc/impl/writer/TreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/BinaryTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/package-tree.html
+#         site/api/orc-core/org/apache/orc/impl/writer/TreeWriterBase.html
+#         site/api/orc-core/org/apache/orc/impl/writer/DecimalTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/StringBaseTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/StructTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/BooleanTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/Decimal64TreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/UnionTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/package-use.html
+#         site/api/orc-core/org/apache/orc/impl/writer/DoubleTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/ListTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/package-summary.html
+#         site/api/orc-core/org/apache/orc/impl/writer/MapTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/WriterContext.html
+#         site/api/orc-core/org/apache/orc/impl/writer/TimestampTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/CharTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/WriterImplV2.html
+#         site/api/orc-core/org/apache/orc/impl/writer/VarcharTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/DateTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/StringTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/FloatTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/TreeWriter.Factory.html
+#         site/api/orc-core/org/apache/orc/impl/writer/ByteTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/package-frame.html
+#         site/api/orc-core/org/apache/orc/impl/writer/IntegerTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/TreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/BinaryTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/TreeWriterBase.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/DecimalTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/StringBaseTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/StructTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/BooleanTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/Decimal64TreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/UnionTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/DoubleTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/ListTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/MapTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/WriterContext.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/TimestampTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/CharTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/WriterImplV2.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/VarcharTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/DateTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/StringTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/FloatTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/TreeWriter.Factory.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/ByteTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/writer/class-use/IntegerTreeWriter.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.TimestampFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.DateTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DateFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.Context.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DoubleFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ReaderImpl.StripeInformationImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RunLengthByteReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/WriterInternal.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/WriterImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.DoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.Decimal64TreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.BinaryTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DoubleFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/PhysicalFsWriter.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/InStream.UncompressedStream.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/StringRedBlackTree.VisitorContext.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/SettableUncompressedStream.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.StringDictionaryTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/MemoryManagerImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RecordReaderImpl.PositionProviderImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DecimalFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/OrcAcidUtils.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/StreamName.Area.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.FloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.ListTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.FloatFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RunLengthIntegerReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.TimestampFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.TimestampFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ReaderImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShims.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ColumnStatisticsImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/StringRedBlackTree.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/DynamicIntArray.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/SchemaEvolution.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/StreamName.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.AnyIntegerFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.StringGroupFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/OutStream.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.AnyIntegerFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShimsCurrent.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShims.ZeroCopyReaderShim.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.StringGroupFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/MemoryManager.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.StringTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DecimalFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.BinaryFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RunLengthIntegerWriterV2.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/IntegerWriter.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShims.TextReaderShim.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/SnappyCodec.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DecimalFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.MapTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/Utf8Utils.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.UnionTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/AircompressorCodec.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RunLengthIntegerReaderV2.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.StringGroupFromDateTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/DataReaderProperties.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DecimalFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/SchemaEvolution.IllegalEvolutionException.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/InStream.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/SerializationUtils.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.IntTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.ByteTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.NullTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DoubleFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/DynamicByteArray.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShimsFactory.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.TimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.FloatFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/SerializationUtils.FixedBitSizes.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.BytesColumnVectorUtil.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.StringGroupFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.TimestampFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ColumnStatisticsImpl.BinaryStatisticsImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.AnyIntegerFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RecordReaderImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/PositionRecorder.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DateFromStringGroupTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.AnyIntegerFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RecordReaderUtils.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/OrcTail.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RunLengthIntegerWriterV2.EncodingType.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.BooleanTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.FloatFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.StringGroupFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/BufferChunk.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.StringGroupFromBinaryTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShims.DirectCompressionType.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.TreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.FloatFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.ReaderContext.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.ConvertTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.VarcharTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.StringDirectTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/OutStream.OutputReceiver.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RunLengthIntegerWriter.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RunLengthByteWriter.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DoubleFromFloatTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RecordReaderUtils.ByteBufferAllocatorPool.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShims_2_2.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.DecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.AnyIntegerFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/BitFieldWriter.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ColumnStatisticsImpl.StringStatisticsImpl.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ZlibCodec.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.AnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/RecordReaderImpl.SargApplier.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.ShortTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/DataReaderProperties.Builder.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/PositionProvider.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/BitFieldReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.StringGroupFromAnyIntegerTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.AnyIntegerFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.LongTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.TimestampFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShims.Factory.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/DirectDecompressionCodec.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/AcidStats.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DecimalFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShims.ByteBufferPoolShim.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.CharTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DoubleFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/TreeReaderFactory.StructTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.DecimalFromDecimalTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/OrcIndex.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/HadoopShims.DirectDecompressor.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/StringRedBlackTree.Visitor.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/MemoryManager.Callback.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.StringGroupFromDoubleTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.FloatFromTimestampTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/PositionedOutputStream.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/ConvertTreeReaderFactory.TimestampFromDateTreeReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/IntegerReader.html
+#         site/api/orc-core/org/apache/orc/impl/class-use/OrcCodecPool.html
+#         site/api/orc-core/org/apache/orc/util/package-tree.html
+#         site/api/orc-core/org/apache/orc/util/Murmur3.html
+#         site/api/orc-core/org/apache/orc/util/BloomFilter.BitSet.html
+#         site/api/orc-core/org/apache/orc/util/BloomFilterUtf8.html
+#         site/api/orc-core/org/apache/orc/util/package-use.html
+#         site/api/orc-core/org/apache/orc/util/package-summary.html
+#         site/api/orc-core/org/apache/orc/util/BloomFilter.html
+#         site/api/orc-core/org/apache/orc/util/BloomFilterIO.Encoding.html
+#         site/api/orc-core/org/apache/orc/util/BloomFilterIO.html
+#         site/api/orc-core/org/apache/orc/util/package-frame.html
+#         site/api/orc-core/org/apache/orc/util/class-use/Murmur3.html
+#         site/api/orc-core/org/apache/orc/util/class-use/BloomFilter.BitSet.html
+#         site/api/orc-core/org/apache/orc/util/class-use/BloomFilterUtf8.html
+#         site/api/orc-core/org/apache/orc/util/class-use/BloomFilter.html
+#         site/api/orc-core/org/apache/orc/util/class-use/BloomFilterIO.Encoding.html
+#         site/api/orc-core/org/apache/orc/util/class-use/BloomFilterIO.html
+#         site/api/orc-core/org/apache/orc/class-use/TypeDescription.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcUtils.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.TimestampStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.RowIndexEntry.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BloomFilterIndexOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Stream.Kind.html
+#         site/api/orc-core/org/apache/orc/class-use/DecimalColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StringStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.Version.html
+#         site/api/orc-core/org/apache/orc/class-use/ColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/DataMask.Standard.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.UserMetadataItem.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.ColumnStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/CompressionCodec.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeFooter.html
+#         site/api/orc-core/org/apache/orc/class-use/TimestampColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.UserMetadataItemOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.ColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.PostScript.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Type.Kind.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DateStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.IntegerStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.RowIndexEntryOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Stream.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DateStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeFooter.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.WriterOptions.html
+#         site/api/orc-core/org/apache/orc/class-use/UnknownFormatException.html
+#         site/api/orc-core/org/apache/orc/class-use/BinaryColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/DateColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.FileTailOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/RecordReader.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcConf.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.WriterVersion.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.RowIndexEntry.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.TimestampStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Stream.html
+#         site/api/orc-core/org/apache/orc/class-use/MemoryManager.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StringStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DecimalStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DecimalStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeInformation.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.BloomFilterVersion.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Type.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeFooterOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.CompressionKind.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.IntegerStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/TypeDescription.RowBatchVersion.html
+#         site/api/orc-core/org/apache/orc/class-use/CompressionKind.html
+#         site/api/orc-core/org/apache/orc/class-use/DataMask.Factory.html
+#         site/api/orc-core/org/apache/orc/class-use/StripeStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BucketStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.FooterOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/BooleanColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.RowIndex.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.ColumnEncoding.html
+#         site/api/orc-core/org/apache/orc/class-use/PhysicalWriter.OutputReceiver.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.ReaderOptions.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BinaryStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/DataMask.Provider.html
+#         site/api/orc-core/org/apache/orc/class-use/DataMask.html
+#         site/api/orc-core/org/apache/orc/class-use/IntegerColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DateStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.FileTail.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StringStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DoubleStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.RowIndexOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BloomFilter.html
+#         site/api/orc-core/org/apache/orc/class-use/Writer.html
+#         site/api/orc-core/org/apache/orc/class-use/Reader.Options.html
+#         site/api/orc-core/org/apache/orc/class-use/FileFormatException.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DoubleStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BinaryStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Footer.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.WriterCallback.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Metadata.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/DoubleColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.WriterContext.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BucketStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BloomFilterIndex.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Metadata.html
+#         site/api/orc-core/org/apache/orc/class-use/StringColumnStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeInformationOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeInformation.html
+#         site/api/orc-core/org/apache/orc/class-use/Reader.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BloomFilter.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.UserMetadataItem.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.ColumnStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BucketStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.CompressionStrategy.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DecimalStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/DataReader.html
+#         site/api/orc-core/org/apache/orc/class-use/CompressionCodec.Modifier.html
+#         site/api/orc-core/org/apache/orc/class-use/StripeInformation.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Type.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.PostScript.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.TimestampStatistics.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.EncodingStrategy.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcFile.WriterImplementation.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StripeStatisticsOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.IntegerStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BloomFilterIndex.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.ColumnEncoding.Kind.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.FileTail.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BloomFilterOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/TypeDescriptionPrettyPrint.html
+#         site/api/orc-core/org/apache/orc/class-use/FileMetadata.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.PostScriptOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.ColumnEncoding.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/PhysicalWriter.html
+#         site/api/orc-core/org/apache/orc/class-use/InMemoryKeystore.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.TypeOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.MetadataOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/TypeDescription.Category.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.DoubleStatistics.Builder.html
+#         site/api/orc-core/org/apache/orc/class-use/MemoryManager.Callback.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.ColumnEncodingOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.StreamOrBuilder.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.Footer.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.RowIndex.html
+#         site/api/orc-core/org/apache/orc/class-use/OrcProto.BinaryStatistics.html
+#         site/api/hive-storage-api/allclasses-noframe.html
+#         site/api/hive-storage-api/serialized-form.html
+#         site/api/hive-storage-api/constant-values.html
+#         site/api/hive-storage-api/overview-summary.html
+#         site/api/hive-storage-api/overview-frame.html
+#         site/api/hive-storage-api/overview-tree.html
+#         site/api/hive-storage-api/index.html
+#         site/api/hive-storage-api/allclasses-frame.html
+#         site/api/hive-storage-api/help-doc.html
+#         site/api/hive-storage-api/deprecated-list.html
+#         site/api/hive-storage-api/index-all.html
+#         site/api/hive-storage-api/org/apache/hive/common/util/package-tree.html
+#         site/api/hive-storage-api/org/apache/hive/common/util/package-use.html
+#         site/api/hive-storage-api/org/apache/hive/common/util/package-summary.html
+#         site/api/hive-storage-api/org/apache/hive/common/util/IntervalDayTimeUtils.html
+#         site/api/hive-storage-api/org/apache/hive/common/util/package-frame.html
+#         site/api/hive-storage-api/org/apache/hive/common/util/class-use/IntervalDayTimeUtils.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/serde2/io/HiveDecimalWritable.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/serde2/io/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/serde2/io/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/serde2/io/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/serde2/io/DateWritable.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/serde2/io/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/serde2/io/class-use/HiveDecimalWritable.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/serde2/io/class-use/DateWritable.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/DiskRangeInfo.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/Pool.PoolObjectHelper.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/Pool.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/HiveIntervalDayTime.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/RandomTypeUtil.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/RandomTypeUtil.HiveDecimalAndPrecisionScale.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/HiveDecimal.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/class-use/HiveIntervalDayTime.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/class-use/RandomTypeUtil.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/class-use/RandomTypeUtil.HiveDecimalAndPrecisionScale.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/type/class-use/HiveDecimal.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/DataCache.DiskRangeListFactory.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/DataCache.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/DiskRangeList.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/DataCache.BooleanRef.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/Allocator.AllocatorOutOfMemoryException.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/DiskRange.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/Allocator.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/DiskRangeList.MutateHelper.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/DiskRangeList.CreateHelper.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/EncodedColumnBatch.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/MemoryBuffer.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/EncodedColumnBatch.ColumnStreamData.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/class-use/EncodedColumnBatch.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/class-use/MemoryBuffer.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/encoded/class-use/EncodedColumnBatch.ColumnStreamData.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/DataCache.DiskRangeListFactory.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/DataCache.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/DiskRangeList.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/DataCache.BooleanRef.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/Allocator.AllocatorOutOfMemoryException.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/DiskRange.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/Allocator.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/DiskRangeList.MutateHelper.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/io/class-use/DiskRangeList.CreateHelper.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/class-use/DiskRangeInfo.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/class-use/Pool.PoolObjectHelper.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/common/class-use/Pool.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/BytesColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/MultiValuedColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/StructColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/ColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/DecimalColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/IntervalDayTimeColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/UnionColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/MapColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/LongColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/ListColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/ColumnVector.Type.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/DoubleColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/VectorizedRowBatch.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/TimestampColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/expressions/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/expressions/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/expressions/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/expressions/StringExpr.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/expressions/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/expressions/class-use/StringExpr.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/BytesColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/MultiValuedColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/StructColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/ColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/DecimalColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/IntervalDayTimeColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/UnionColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/MapColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/LongColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/ListColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/ColumnVector.Type.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/DoubleColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/VectorizedRowBatch.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/exec/vector/class-use/TimestampColumnVector.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/util/JavaDataModel.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/util/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/util/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/util/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/util/TimestampUtils.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/util/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/util/class-use/JavaDataModel.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/util/class-use/TimestampUtils.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/package-tree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/SearchArgumentImpl.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/SearchArgumentFactory.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/SearchArgumentImpl.PredicateLeafImpl.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/PredicateLeaf.Type.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/SearchArgument.Builder.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/package-use.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/PredicateLeaf.Operator.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/SearchArgument.TruthValue.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/package-summary.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/SearchArgument.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/ExpressionTree.Operator.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/ExpressionTree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/PredicateLeaf.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/package-frame.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/SearchArgumentImpl.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/SearchArgumentFactory.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/SearchArgumentImpl.PredicateLeafImpl.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/PredicateLeaf.Type.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/SearchArgument.Builder.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/PredicateLeaf.Operator.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/SearchArgument.TruthValue.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/SearchArgument.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/ExpressionTree.Operator.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/ExpressionTree.html
+#         site/api/hive-storage-api/org/apache/hadoop/hive/ql/io/sarg/class-use/PredicateLeaf.html
+#         site/api/orc-shims/allclasses-noframe.html
+#         site/api/orc-shims/constant-values.html
+#         site/api/orc-shims/overview-summary.html
+#         site/api/orc-shims/overview-frame.html
+#         site/api/orc-shims/overview-tree.html
+#         site/api/orc-shims/index.html
+#         site/api/orc-shims/allclasses-frame.html
+#         site/api/orc-shims/help-doc.html
+#         site/api/orc-shims/deprecated-list.html
+#         site/api/orc-shims/index-all.html
+#         site/api/orc-shims/org/apache/orc/package-tree.html
+#         site/api/orc-shims/org/apache/orc/package-use.html
+#         site/api/orc-shims/org/apache/orc/package-summary.html
+#         site/api/orc-shims/org/apache/orc/EncryptionAlgorithm.html
+#         site/api/orc-shims/org/apache/orc/package-frame.html
+#         site/api/orc-shims/org/apache/orc/impl/package-tree.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShimsPre2_3.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShims.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShimsPre2_6.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShimsCurrent.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShims.ZeroCopyReaderShim.html
+#         site/api/orc-shims/org/apache/orc/impl/package-use.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShims.KeyProvider.html
+#         site/api/orc-shims/org/apache/orc/impl/package-summary.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShims.DirectCompressionType.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShims.LocalKey.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShims.KeyMetadata.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShims.ByteBufferPoolShim.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShimsPre2_7.html
+#         site/api/orc-shims/org/apache/orc/impl/HadoopShims.DirectDecompressor.html
+#         site/api/orc-shims/org/apache/orc/impl/package-frame.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShimsPre2_3.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShims.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShimsPre2_6.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShimsCurrent.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShims.ZeroCopyReaderShim.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShims.KeyProvider.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShims.DirectCompressionType.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShims.LocalKey.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShims.KeyMetadata.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShims.ByteBufferPoolShim.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShimsPre2_7.html
+#         site/api/orc-shims/org/apache/orc/impl/class-use/HadoopShims.DirectDecompressor.html
+#         site/api/orc-shims/org/apache/orc/class-use/EncryptionAlgorithm.html
+#         site/api/orc-tools/allclasses-noframe.html
+#         site/api/orc-tools/constant-values.html
+#         site/api/orc-tools/overview-tree.html
+#         site/api/orc-tools/index.html
+#         site/api/orc-tools/allclasses-frame.html
+#         site/api/orc-tools/help-doc.html
+#         site/api/orc-tools/deprecated-list.html
+#         site/api/orc-tools/index-all.html
+#         site/api/orc-tools/org/apache/orc/tools/package-tree.html
+#         site/api/orc-tools/org/apache/orc/tools/PrintData.html
+#         site/api/orc-tools/org/apache/orc/tools/FileDump.html
+#         site/api/orc-tools/org/apache/orc/tools/Driver.html
+#         site/api/orc-tools/org/apache/orc/tools/package-use.html
+#         site/api/orc-tools/org/apache/orc/tools/package-summary.html
+#         site/api/orc-tools/org/apache/orc/tools/OrcFileGenerator.html
+#         site/api/orc-tools/org/apache/orc/tools/JsonFileDump.html
+#         site/api/orc-tools/org/apache/orc/tools/package-frame.html
+#         site/api/orc-tools/org/apache/orc/tools/class-use/PrintData.html
+#         site/api/orc-tools/org/apache/orc/tools/class-use/FileDump.html
+#         site/api/orc-tools/org/apache/orc/tools/class-use/Driver.html
+#         site/api/orc-tools/org/apache/orc/tools/class-use/OrcFileGenerator.html
+#         site/api/orc-tools/org/apache/orc/tools/class-use/JsonFileDump.html
+#         site/_includes/primary-nav-items.html
+#         site/_includes/anchor_links.html
+#         site/_includes/header.html
+#         site/_includes/news_item.html
+#         site/_includes/docs_contents.html
+#         site/_includes/footer.html
+#         site/_includes/news_contents_mobile.html
+#         site/_includes/news_contents.html
+#         site/_includes/top.html
+#         site/_includes/docs_contents_mobile.html
+#         site/fonts/fontawesome-webfont.svg
+
+#----------------------------------------------------------------------------
+# huge files   (skipped):
+#         examples/TestOrcFile.testSeek.orc
+#         examples/demo-11-none.orc
+#         examples/expected/TestOrcFile.testSeek.jsn.gz
+#         examples/expected/demo-12-zlib.jsn.gz
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ .
+                                  Apache License
+                            Version 2.0, January 2004
+                         http://www.apache.org/licenses/
+ .
+    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+ .
+    1. Definitions.
+ .
+       "License" shall mean the terms and conditions for use, reproduction,
+       and distribution as defined by Sections 1 through 9 of this document.
+ .
+       "Licensor" shall mean the copyright owner or entity authorized by
+       the copyright owner that is granting the License.
+ .
+       "Legal Entity" shall mean the union of the acting entity and all
+       other entities that control, are controlled by, or are under common
+       control with that entity. For the purposes of this definition,
+       "control" means (i) the power, direct or indirect, to cause the
+       direction or management of such entity, whether by contract or
+       otherwise, or (ii) ownership of fifty percent (50%) or more of the
+       outstanding shares, or (iii) beneficial ownership of such entity.
+ .
+       "You" (or "Your") shall mean an individual or Legal Entity
+       exercising permissions granted by this License.
+ .
+       "Source" form shall mean the preferred form for making modifications,
+       including but not limited to software source code, documentation
+       source, and configuration files.
+ .
+       "Object" form shall mean any form resulting from mechanical
+       transformation or translation of a Source form, including but
+       not limited to compiled object code, generated documentation,
+       and conversions to other media types.
+ .
+       "Work" shall mean the work of authorship, whether in Source or
+       Object form, made available under the License, as indicated by a
+       copyright notice that is included in or attached to the work
+       (an example is provided in the Appendix below).
+ .
+       "Derivative Works" shall mean any work, whether in Source or Object
+       form, that is based on (or derived from) the Work and for which the
+       editorial revisions, annotations, elaborations, or other modifications
+       represent, as a whole, an original work of authorship. For the purposes
+       of this License, Derivative Works shall not include works that remain
+       separable from, or merely link (or bind by name) to the interfaces of,
+       the Work and Derivative Works thereof.
+ .
+       "Contribution" shall mean any work of authorship, including
+       the original version of the Work and any modifications or additions
+       to that Work or Derivative Works thereof, that is intentionally
+       submitted to Licensor for inclusion in the Work by the copyright owner
+       or by an individual or Legal Entity authorized to submit on behalf of
+       the copyright owner. For the purposes of this definition, "submitted"
+       means any form of electronic, verbal, or written communication sent
+       to the Licensor or its representatives, including but not limited to
+       communication on electronic mailing lists, source code control systems,
+       and issue tracking systems that are managed by, or on behalf of, the
+       Licensor for the purpose of discussing and improving the Work, but
+       excluding communication that is conspicuously marked or otherwise
+       designated in writing by the copyright owner as "Not a Contribution."
+ .
+       "Contributor" shall mean Licensor and any individual or Legal Entity
+       on behalf of whom a Contribution has been received by Licensor and
+       subsequently incorporated within the Work.
+ .
+    2. Grant of Copyright License. Subject to the terms and conditions of
+       this License, each Contributor hereby grants to You a perpetual,
+       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+       copyright license to reproduce, prepare Derivative Works of,
+       publicly display, publicly perform, sublicense, and distribute the
+       Work and such Derivative Works in Source or Object form.
+ .
+    3. Grant of Patent License. Subject to the terms and conditions of
+       this License, each Contributor hereby grants to You a perpetual,
+       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+       (except as stated in this section) patent license to make, have made,
+       use, offer to sell, sell, import, and otherwise transfer the Work,
+       where such license applies only to those patent claims licensable
+       by such Contributor that are necessarily infringed by their
+       Contribution(s) alone or by combination of their Contribution(s)
+       with the Work to which such Contribution(s) was submitted. If You
+       institute patent litigation against any entity (including a
+       cross-claim or counterclaim in a lawsuit) alleging that the Work
+       or a Contribution incorporated within the Work constitutes direct
+       or contributory patent infringement, then any patent licenses
+       granted to You under this License for that Work shall terminate
+       as of the date such litigation is filed.
+ .
+    4. Redistribution. You may reproduce and distribute copies of the
+       Work or Derivative Works thereof in any medium, with or without
+       modifications, and in Source or Object form, provided that You
+       meet the following conditions:
+ .
+       (a) You must give any other recipients of the Work or
+           Derivative Works a copy of this License; and
+ .
+       (b) You must cause any modified files to carry prominent notices
+           stating that You changed the files; and
+ .
+       (c) You must retain, in the Source form of any Derivative Works
+           that You distribute, all copyright, patent, trademark, and
+           attribution notices from the Source form of the Work,
+           excluding those notices that do not pertain to any part of
+           the Derivative Works; and
+ .
+       (d) If the Work includes a "NOTICE" text file as part of its
+           distribution, then any Derivative Works that You distribute must
+           include a readable copy of the attribution notices contained
+           within such NOTICE file, excluding those notices that do not
+           pertain to any part of the Derivative Works, in at least one
+           of the following places: within a NOTICE text file distributed
+           as part of the Derivative Works; within the Source form or
+           documentation, if provided along with the Derivative Works; or,
+           within a display generated by the Derivative Works, if and
+           wherever such third-party notices normally appear. The contents
+           of the NOTICE file are for informational purposes only and
+           do not modify the License. You may add Your own attribution
+           notices within Derivative Works that You distribute, alongside
+           or as an addendum to the NOTICE text from the Work, provided
+           that such additional attribution notices cannot be construed
+           as modifying the License.
+ .
+       You may add Your own copyright statement to Your modifications and
+       may provide additional or different license terms and conditions
+       for use, reproduction, or distribution of Your modifications, or
+       for any such Derivative Works as a whole, provided Your use,
+       reproduction, and distribution of the Work otherwise complies with
+       the conditions stated in this License.
+ .
+    5. Submission of Contributions. Unless You explicitly state otherwise,
+       any Contribution intentionally submitted for inclusion in the Work
+       by You to the Licensor shall be under the terms and conditions of
+       this License, without any additional terms or conditions.
+       Notwithstanding the above, nothing herein shall supersede or modify
+       the terms of any separate license agreement you may have executed
+       with Licensor regarding such Contributions.
+ .
+    6. Trademarks. This License does not grant permission to use the trade
+       names, trademarks, service marks, or product names of the Licensor,
+       except as required for reasonable and customary use in describing the
+       origin of the Work and reproducing the content of the NOTICE file.
+ .
+    7. Disclaimer of Warranty. Unless required by applicable law or
+       agreed to in writing, Licensor provides the Work (and each
+       Contributor provides its Contributions) on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+       implied, including, without limitation, any warranties or conditions
+       of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+       PARTICULAR PURPOSE. You are solely responsible for determining the
+       appropriateness of using or redistributing the Work and assume any
+       risks associated with Your exercise of permissions under this License.
+ .
+    8. Limitation of Liability. In no event and under no legal theory,
+       whether in tort (including negligence), contract, or otherwise,
+       unless required by applicable law (such as deliberate and grossly
+       negligent acts) or agreed to in writing, shall any Contributor be
+       liable to You for damages, including any direct, indirect, special,
+       incidental, or consequential damages of any character arising as a
+       result of this License or out of the use or inability to use the
+       Work (including but not limited to damages for loss of goodwill,
+       work stoppage, computer failure or malfunction, or any and all
+       other commercial damages or losses), even if such Contributor
+       has been advised of the possibility of such damages.
+ .
+    9. Accepting Warranty or Additional Liability. While redistributing
+       the Work or Derivative Works thereof, You may choose to offer,
+       and charge a fee for, acceptance of support, warranty, indemnity,
+       or other liability obligations and/or rights consistent with this
+       License. However, in accepting such obligations, You may act only
+       on Your own behalf and on Your sole responsibility, not on behalf
+       of any other Contributor, and only if You agree to indemnify,
+       defend, and hold each Contributor harmless for any liability contains
+       incurred by, or claims asserted against, such Contributor by reason
+       of your accepting any such warranty or additional liability.
+ .
+    END OF TERMS AND CONDITIONS
+ .
+    APPENDIX: How to apply the Apache License to your work.
+ .
+       To apply the Apache License to your work, attach the following
+       boilerplate notice, with the fields enclosed by brackets "[]"
+       replaced with your own identifying information. (Don't include
+       the brackets!)  The text should be enclosed in the appropriate
+       comment syntax for the file format. We also recommend that a
+       file or class name and description of purpose be included on the
+       same "printed page" as the copyright notice for easier
+       identification within third-party archives.
+ .
+    Copyright [yyyy] [name of copyright owner]
+ .
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+ .
+        http://www.apache.org/licenses/LICENSE-2.0
+ .
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+ .
+ .
+ APACHE ORC SUBCOMPONENTS:
+ .
+ The Apache ORC project contains subcomponents with separate copyright
+ notices and license terms. Your use of the source code for the these
+ subcomponents is subject to the terms and conditions of the following
+ licenses.
+ .
+ ----
+ Parts of the site formatting includes software developed by Tom Preston-Werner
+ that are licensed under the MIT License (MIT):
+ .
+ (c) Copyright [2008-2015] Tom Preston-Werner
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
